@@ -1,1632 +1,337 @@
-<!DOCTYPE html>
-<html class="js cssanimations" lang="zh"><head><style type="text/css">svg:not(:root).svg-inline--fa {
-  overflow: visible;
-}
-
-.svg-inline--fa {
-  display: inline-block;
-  font-size: inherit;
-  height: 1em;
-  overflow: visible;
-  vertical-align: -0.125em;
-}
-.svg-inline--fa.fa-lg {
-  vertical-align: -0.225em;
-}
-.svg-inline--fa.fa-w-1 {
-  width: 0.0625em;
-}
-.svg-inline--fa.fa-w-2 {
-  width: 0.125em;
-}
-.svg-inline--fa.fa-w-3 {
-  width: 0.1875em;
-}
-.svg-inline--fa.fa-w-4 {
-  width: 0.25em;
-}
-.svg-inline--fa.fa-w-5 {
-  width: 0.3125em;
-}
-.svg-inline--fa.fa-w-6 {
-  width: 0.375em;
-}
-.svg-inline--fa.fa-w-7 {
-  width: 0.4375em;
-}
-.svg-inline--fa.fa-w-8 {
-  width: 0.5em;
-}
-.svg-inline--fa.fa-w-9 {
-  width: 0.5625em;
-}
-.svg-inline--fa.fa-w-10 {
-  width: 0.625em;
-}
-.svg-inline--fa.fa-w-11 {
-  width: 0.6875em;
-}
-.svg-inline--fa.fa-w-12 {
-  width: 0.75em;
-}
-.svg-inline--fa.fa-w-13 {
-  width: 0.8125em;
-}
-.svg-inline--fa.fa-w-14 {
-  width: 0.875em;
-}
-.svg-inline--fa.fa-w-15 {
-  width: 0.9375em;
-}
-.svg-inline--fa.fa-w-16 {
-  width: 1em;
-}
-.svg-inline--fa.fa-w-17 {
-  width: 1.0625em;
-}
-.svg-inline--fa.fa-w-18 {
-  width: 1.125em;
-}
-.svg-inline--fa.fa-w-19 {
-  width: 1.1875em;
-}
-.svg-inline--fa.fa-w-20 {
-  width: 1.25em;
-}
-.svg-inline--fa.fa-pull-left {
-  margin-right: 0.3em;
-  width: auto;
-}
-.svg-inline--fa.fa-pull-right {
-  margin-left: 0.3em;
-  width: auto;
-}
-.svg-inline--fa.fa-border {
-  height: 1.5em;
-}
-.svg-inline--fa.fa-li {
-  width: 2em;
-}
-.svg-inline--fa.fa-fw {
-  width: 1.25em;
-}
-
-.fa-layers svg.svg-inline--fa {
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.fa-layers {
-  display: inline-block;
-  height: 1em;
-  position: relative;
-  text-align: center;
-  vertical-align: -0.125em;
-  width: 1em;
-}
-.fa-layers svg.svg-inline--fa {
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-}
-
-.fa-layers-counter, .fa-layers-text {
-  display: inline-block;
-  position: absolute;
-  text-align: center;
-}
-
-.fa-layers-text {
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-}
-
-.fa-layers-counter {
-  background-color: #ff253a;
-  border-radius: 1em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #fff;
-  height: 1.5em;
-  line-height: 1;
-  max-width: 5em;
-  min-width: 1.5em;
-  overflow: hidden;
-  padding: 0.25em;
-  right: 0;
-  text-overflow: ellipsis;
-  top: 0;
-  -webkit-transform: scale(0.25);
-          transform: scale(0.25);
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
-}
-
-.fa-layers-bottom-right {
-  bottom: 0;
-  right: 0;
-  top: auto;
-  -webkit-transform: scale(0.25);
-          transform: scale(0.25);
-  -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
-}
-
-.fa-layers-bottom-left {
-  bottom: 0;
-  left: 0;
-  right: auto;
-  top: auto;
-  -webkit-transform: scale(0.25);
-          transform: scale(0.25);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-}
-
-.fa-layers-top-right {
-  right: 0;
-  top: 0;
-  -webkit-transform: scale(0.25);
-          transform: scale(0.25);
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
-}
-
-.fa-layers-top-left {
-  left: 0;
-  right: auto;
-  top: 0;
-  -webkit-transform: scale(0.25);
-          transform: scale(0.25);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-}
-
-.fa-lg {
-  font-size: 1.3333333333em;
-  line-height: 0.75em;
-  vertical-align: -0.0667em;
-}
-
-.fa-xs {
-  font-size: 0.75em;
-}
-
-.fa-sm {
-  font-size: 0.875em;
-}
-
-.fa-1x {
-  font-size: 1em;
-}
-
-.fa-2x {
-  font-size: 2em;
-}
-
-.fa-3x {
-  font-size: 3em;
-}
-
-.fa-4x {
-  font-size: 4em;
-}
-
-.fa-5x {
-  font-size: 5em;
-}
-
-.fa-6x {
-  font-size: 6em;
-}
-
-.fa-7x {
-  font-size: 7em;
-}
-
-.fa-8x {
-  font-size: 8em;
-}
-
-.fa-9x {
-  font-size: 9em;
-}
-
-.fa-10x {
-  font-size: 10em;
-}
-
-.fa-fw {
-  text-align: center;
-  width: 1.25em;
-}
-
-.fa-ul {
-  list-style-type: none;
-  margin-left: 2.5em;
-  padding-left: 0;
-}
-.fa-ul > li {
-  position: relative;
-}
-
-.fa-li {
-  left: -2em;
-  position: absolute;
-  text-align: center;
-  width: 2em;
-  line-height: inherit;
-}
-
-.fa-border {
-  border: solid 0.08em #eee;
-  border-radius: 0.1em;
-  padding: 0.2em 0.25em 0.15em;
-}
-
-.fa-pull-left {
-  float: left;
-}
-
-.fa-pull-right {
-  float: right;
-}
-
-.fa.fa-pull-left,
-.fas.fa-pull-left,
-.far.fa-pull-left,
-.fal.fa-pull-left,
-.fab.fa-pull-left {
-  margin-right: 0.3em;
-}
-.fa.fa-pull-right,
-.fas.fa-pull-right,
-.far.fa-pull-right,
-.fal.fa-pull-right,
-.fab.fa-pull-right {
-  margin-left: 0.3em;
-}
-
-.fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
-          animation: fa-spin 2s infinite linear;
-}
-
-.fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
-          animation: fa-spin 1s infinite steps(8);
-}
-
-@-webkit-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-.fa-rotate-90 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.fa-rotate-180 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.fa-rotate-270 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-}
-
-.fa-flip-horizontal {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
-}
-
-.fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-  -webkit-transform: scale(1, -1);
-          transform: scale(1, -1);
-}
-
-.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-  -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1);
-}
-
-:root .fa-rotate-90,
-:root .fa-rotate-180,
-:root .fa-rotate-270,
-:root .fa-flip-horizontal,
-:root .fa-flip-vertical,
-:root .fa-flip-both {
-  -webkit-filter: none;
-          filter: none;
-}
-
-.fa-stack {
-  display: inline-block;
-  height: 2em;
-  position: relative;
-  width: 2.5em;
-}
-
-.fa-stack-1x,
-.fa-stack-2x {
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.svg-inline--fa.fa-stack-1x {
-  height: 1em;
-  width: 1.25em;
-}
-.svg-inline--fa.fa-stack-2x {
-  height: 2em;
-  width: 2.5em;
-}
-
-.fa-inverse {
-  color: #fff;
-}
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.sr-only-focusable:active, .sr-only-focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-.svg-inline--fa .fa-primary {
-  fill: var(--fa-primary-color, currentColor);
-  opacity: 1;
-  opacity: var(--fa-primary-opacity, 1);
-}
-
-.svg-inline--fa .fa-secondary {
-  fill: var(--fa-secondary-color, currentColor);
-  opacity: 0.4;
-  opacity: var(--fa-secondary-opacity, 0.4);
-}
-
-.svg-inline--fa.fa-swap-opacity .fa-primary {
-  opacity: 0.4;
-  opacity: var(--fa-secondary-opacity, 0.4);
-}
-
-.svg-inline--fa.fa-swap-opacity .fa-secondary {
-  opacity: 1;
-  opacity: var(--fa-primary-opacity, 1);
-}
-
-.svg-inline--fa mask .fa-primary,
-.svg-inline--fa mask .fa-secondary {
-  fill: black;
-}
-
-.fad.fa-inverse {
-  color: #fff;
-}</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
-/*# sourceURL=ace/css/ace-tm */</style><style id="ace_editor.css">.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;box-sizing: border-box;min-width: 100%;contain: style size layout;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;contain: style size layout;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {position: absolute;top: 0;left: 0;right: 0;padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {contain: strict;position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;contain: strict;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: transparent;color: inherit;z-index: 1000;opacity: 1;}.ace_composition_placeholder { color: transparent }.ace_composition_marker { border-bottom: 1px solid;position: absolute;border-radius: 0;margin-top: 1px;}[ace_nocontext=true] {transform: none!important;filter: none!important;perspective: none!important;clip-path: none!important;mask : none!important;contain: none!important;perspective: none!important;mix-blend-mode: initial!important;z-index: auto;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;height: 1000000px;contain: style size layout;}.ace_text-layer {font: inherit !important;position: absolute;height: 1000000px;width: 1000000px;contain: style size layout;}.ace_text-layer > .ace_line, .ace_text-layer > .ace_line_group {contain: style size layout;position: absolute;top: 0;left: 0;right: 0;}.ace_hidpi .ace_text-layer,.ace_hidpi .ace_gutter-layer,.ace_hidpi .ace_content,.ace_hidpi .ace_gutter {contain: strict;will-change: transform;}.ace_hidpi .ace_text-layer > .ace_line, .ace_hidpi .ace_text-layer > .ace_line_group {contain: strict;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {transition: opacity 0.18s;}.ace_animate-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: step-end;animation-name: blink-ace-animate;animation-iteration-count: infinite;}.ace_animate-blinking.ace_smooth-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: ease-in-out;animation-name: blink-ace-animate-smooth;}@keyframes blink-ace-animate {from, to { opacity: 1; }60% { opacity: 0; }}@keyframes blink-ace-animate-smooth {from, to { opacity: 1; }45% { opacity: 1; }60% { opacity: 0; }85% { opacity: 0; }}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;box-sizing: border-box;}.ace_line .ace_fold {box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_inline_button {border: 1px solid lightgray;display: inline-block;margin: -1px 8px;padding: 0 5px;pointer-events: auto;cursor: pointer;}.ace_inline_button:hover {border-color: gray;background: rgba(200,200,200,0.2);display: inline-block;pointer-events: auto;}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_text-input-ios {position: absolute !important;top: -100000px !important;left: -100000px !important;}
-/*# sourceURL=ace/css/ace_editor.css */</style>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>首页 - 洛谷 | 计算机科学教育新生态</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<html><head>
+    <!-- 启用极速模式(webkit) -->
     <meta name="renderer" content="webkit">
-    <meta name="csrf-token" content="1644636975:DQ/K5ogiVxw6yCKrXibaoYdXwFClvPKJ0tg66X917qA=">
-            <meta name="keywords" content="洛谷,洛谷Online judge,noip,noi,信息学,信息学竞赛,acm,竞赛,onlineJudge,洛谷Onlinejudge,信息学学习">
-<meta name="description" content="洛谷创办于2013年，致力于为参加noip、noi、acm的选手提供清爽、快捷的编程体验。它拥有在线测题系统、强大的社区、在线学习功能。很多教程内容由各位oiers提供的，内容广泛。无论是初学oi的蒟蒻，还是久经沙场的神犇，均可从中获益，也可以帮助他人，共同进步。是学习noip等竞赛时理想的网站。">
-            <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' 'unsafe-eval' luogu.com.cn *.luogu.com.cn luogu.org *.luogu.org *.cnzz.com luoguprivate.oss-cn-hangzhou.aliyuncs.com luogu.oss-cn-hangzhou.aliyuncs.com wss: blob:; img-src * data:; font-src * data:; frame-src https://player.bilibili.com https://www.bilibili.com">
-        <link rel="stylesheet" href="https://cdn.luogu.com.cn/css/amazeui.min.css">
-    <link rel="stylesheet" href="https://cdn.luogu.com.cn/css/katex.min.css">
-    <link rel="stylesheet" href="https://cdn.luogu.com.cn/css/luogu3.css?ver=20190102">
-    <link rel="stylesheet" href="https://cdn.luogu.com.cn/css/highlight_tomorrow.css">
-    <link rel="stylesheet" href="https://cdn.luogu.com.cn/markdown-palettes/markdown-palettes.css?ver=20190219">
-    <script type="text/javascript" async="" charset="utf-8" src="https://c.cnzz.com/core.php?web_id=5476811&amp;t=z"></script><script src="https://cdn.luogu.com.cn/js/jquery-2.1.1.min.js"></script>
-    <script src="https://cdn.luogu.com.cn/js/luogu3_pre.js?ver=20190101"></script>
-
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" media="screen">
-    <link rel="stylesheet" href="https://cdn.luogu.com.cn/fe/loader.css?ver=20220117">
-    <script>window._feInjection = JSON.parse(decodeURIComponent("%7B%22code%22%3A200%2C%22currentUser%22%3A%7B%22blogAddress%22%3A%22https%3A%5C%2F%5C%2Fwww.luogu.com.cn%5C%2Fblog%5C%2Fsuprise%5C%2F%22%2C%22followingCount%22%3A9%2C%22followerCount%22%3A10%2C%22ranking%22%3A5306%2C%22unreadMessageCount%22%3A0%2C%22unreadNoticeCount%22%3A0%2C%22uid%22%3A359140%2C%22name%22%3A%22%5Cu5fa1%5Cu574210029%5Cu53f7%22%2C%22slogan%22%3A%22%3D%3D%5Cu53ea%5Cu6709%5Cu9b54%5Cu6cd5%5Cu624d%5Cu80fd%5Cu6253%5Cu8d25%5Cu9b54%5Cu6cd5%3D%3D%22%2C%22badge%22%3Anull%2C%22isAdmin%22%3Afalse%2C%22isBanned%22%3Afalse%2C%22color%22%3A%22Green%22%2C%22ccfLevel%22%3A4%2C%22verified%22%3Atrue%2C%22email%22%3A%221356100126%40qq.com%22%2C%22phone%22%3A%2215683667492%22%7D%2C%22currentTemplate%22%3A%22Excited%22%2C%22currentData%22%3A%7B%22shortHeader%22%3Atrue%2C%22pageName%22%3A%22%5Cu6d1b%5Cu8c37%22%2C%22title%22%3A%22%5Cu9996%5Cu9875%22%7D%2C%22currentTheme%22%3A%7B%22id%22%3A52373%2C%22header%22%3A%7B%22imagePath%22%3A%22https%3A%5C%2F%5C%2Fcdn.luogu.com.cn%5C%2Fupload%5C%2Fimage_hosting%5C%2Fv6h03my9.png%22%2C%22color%22%3A%5B%5B111%2C214%2C221%2C0.8666666666666667%5D%2C%5B225%2C149%2C216%2C0.8666666666666667%5D%5D%2C%22blur%22%3A0%2C%22brightness%22%3A5%2C%22degree%22%3A180%2C%22repeat%22%3A0%2C%22position%22%3A%5B50%2C50%5D%2C%22size%22%3A%5B-1%2C-1%5D%2C%22type%22%3A1%2C%22__CLASS_NAME%22%3A%22Luogu%5C%5CDataClass%5C%5CUser%5C%5CThemeConfig%5C%5CHeaderFooterConfig%22%7D%2C%22sideNav%22%3A%7B%22logoBackgroundColor%22%3A%5B111%2C214%2C221%2C1%5D%2C%22color%22%3A%5B111%2C214%2C221%2C1%5D%2C%22invertColor%22%3Atrue%2C%22__CLASS_NAME%22%3A%22Luogu%5C%5CDataClass%5C%5CUser%5C%5CThemeConfig%5C%5CSideNavConfig%22%7D%2C%22footer%22%3A%7B%22imagePath%22%3Anull%2C%22color%22%3A%5B%5B111%2C214%2C221%2C0.8666666666666667%5D%2C%5B225%2C149%2C216%2C0.8666666666666667%5D%5D%2C%22blur%22%3A3%2C%22brightness%22%3A10%2C%22degree%22%3A270%2C%22repeat%22%3A0%2C%22position%22%3A%5B0%2C0%5D%2C%22size%22%3A%5B0%2C0%5D%2C%22type%22%3A2%2C%22__CLASS_NAME%22%3A%22Luogu%5C%5CDataClass%5C%5CUser%5C%5CThemeConfig%5C%5CHeaderFooterConfig%22%7D%7D%7D"));window._feConfigVersion=1644537786;window._tagVersion=1644545800;</script>
-    <script>window._release = '20220117';</script>
-    <script src="https://cdn.luogu.com.cn/fe/loader.js?ver=20220117" charset="utf-8" defer=""></script>
-<style type="text/css">.lfe-tooltip-theme{display:block !important;z-index:10000}.lfe-tooltip-theme .tooltip-inner{background:#000;color:#fff;border-radius:4px;padding:5px 10px 4px}.lfe-tooltip-theme .tooltip-arrow{width:0;height:0;border-style:solid;position:absolute;margin:5px;border-color:#000;z-index:1}.lfe-tooltip-theme[x-placement^=top]{margin-bottom:5px}.lfe-tooltip-theme[x-placement^=top] .tooltip-arrow{border-width:5px 5px 0 5px;border-left-color:transparent !important;border-right-color:transparent !important;border-bottom-color:transparent !important;bottom:-5px;left:calc(50% - 5px);margin-top:0;margin-bottom:0}.lfe-tooltip-theme[x-placement^=bottom]{margin-top:5px}.lfe-tooltip-theme[x-placement^=bottom] .tooltip-arrow{border-width:0 5px 5px 5px;border-left-color:transparent !important;border-right-color:transparent !important;border-top-color:transparent !important;top:-5px;left:calc(50% - 5px);margin-top:0;margin-bottom:0}.lfe-tooltip-theme[x-placement^=right]{margin-left:5px}.lfe-tooltip-theme[x-placement^=right] .tooltip-arrow{border-width:5px 5px 5px 0;border-left-color:transparent !important;border-top-color:transparent !important;border-bottom-color:transparent !important;left:-5px;top:calc(50% - 5px);margin-left:0;margin-right:0}.lfe-tooltip-theme[x-placement^=left]{margin-right:5px}.lfe-tooltip-theme[x-placement^=left] .tooltip-arrow{border-width:5px 0 5px 5px;border-top-color:transparent !important;border-right-color:transparent !important;border-bottom-color:transparent !important;right:-5px;top:calc(50% - 5px);margin-left:0;margin-right:0}.lfe-tooltip-theme.popover .popover-inner{background:#f9f9f9;color:#000;padding:24px;border-radius:5px;box-shadow:0 5px 30px rgba(0,0,0,.1)}.lfe-tooltip-theme.popover .popover-arrow{border-color:#f9f9f9}.lfe-tooltip-theme[aria-hidden=true]{visibility:hidden;opacity:0;transition:opacity .15s,visibility .15s}.lfe-tooltip-theme[aria-hidden=false]{visibility:visible;opacity:1;transition:opacity .15s}</style><style type="text/css">.resize-observer[data-v-8859cc6c]{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border:none;background-color:transparent;pointer-events:none;display:block;overflow:hidden;opacity:0}.resize-observer[data-v-8859cc6c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style><style></style><style type="text/css">.top-progress[data-v-6330a2e0]{position:fixed;right:0;left:0;height:4px;overflow:hidden;z-index:99}.bar[data-v-6330a2e0]{height:100%;border-top-right-radius:2px;border-bottom-right-radius:2px;transition:width .2s ease;opacity:1;animation:loading-progress-data-v-6330a2e0 10s cubic-bezier(.22,.86,0,.8);animation-fill-mode:forwards}.done[data-v-6330a2e0]{animation:none;opacity:0;width:100%;transition:opacity .2s ease .2s}@keyframes loading-progress-data-v-6330a2e0{from{width:5%}to{width:99%}}</style><style type="text/css">nav[data-v-27b2cd59]{position:fixed;width:3.7em;height:100%;display:flex;flex-direction:column;text-align:center;line-height:1.2;z-index:5}.logo-wrap[data-v-27b2cd59]{display:block;box-sizing:border-box;padding:1em;width:3.7em;text-align:center;height:4em;overflow:hidden;outline:0}.logo-wrap>img[data-v-27b2cd59]{max-width:100%;max-height:100%}.user-nav[data-v-27b2cd59]{display:none;height:3.4em;align-items:center;background:rgba(255,255,255,.5);border-radius:1em;margin:.3em;padding:0 .8em}</style><style type="text/css">a[data-v-639bc19b]{display:block;padding:.5em .5em;text-decoration:none}.icon[data-v-639bc19b]{text-align:center;margin:0 .3em;font-size:1.1em;display:inline-block;width:1.5em;vertical-align:middle}.text[data-v-639bc19b]{font-size:.8em;vertical-align:middle}</style><style type="text/css">a[data-v-303bbf52]{text-decoration:none}a.color-none[data-v-303bbf52]:hover{text-decoration:none}.color-header[data-v-303bbf52]{color:#bbb}.color-header[data-v-303bbf52]:hover{color:#fff}.color-default[data-v-303bbf52],.color-default-noline[data-v-303bbf52]{color:#3498db}.color-default-noline[data-v-303bbf52]:hover,.color-default[data-v-303bbf52]:hover{color:#0056b3}a.color-default-noline[data-v-303bbf52]:hover{text-decoration:none}.color-title[data-v-303bbf52]{color:#666}.color-title[data-v-303bbf52]:hover{color:#5bc0de}</style><link rel="stylesheet" type="text/css" href="https://cdn.luogu.com.cn/fe/module.201.daa5335ef0f59464ea86.css"><script charset="utf-8" src="https://cdn.luogu.com.cn/fe/module.201.daa5335ef0f59464ea86.js"></script><style id="poshytip-css-tip-twitter" type="text/css">div.tip-twitter{visibility:hidden;position:absolute;top:0;left:0;}div.tip-twitter table.tip-table, div.tip-twitter table.tip-table td{margin:0;font-family:inherit;font-size:inherit;font-weight:inherit;font-style:inherit;font-variant:inherit;vertical-align:middle;}div.tip-twitter td.tip-bg-image span{display:block;font:1px/1px sans-serif;height:10px;width:10px;overflow:hidden;}div.tip-twitter td.tip-right{background-position:100% 0;}div.tip-twitter td.tip-bottom{background-position:100% 100%;}div.tip-twitter td.tip-left{background-position:0 100%;}div.tip-twitter div.tip-inner{background-position:-10px -10px;}div.tip-twitter div.tip-arrow{visibility:hidden;position:absolute;overflow:hidden;font:1px/1px sans-serif;}</style></head>
-<body>
-<div data-v-90bffe18="" id="app" class="lfe-vars"><div data-v-6330a2e0="" data-v-90bffe18="" class="top-progress"><div data-v-6330a2e0="" class="bar done" style="background: rgb(52, 152, 219) none repeat scroll 0% 0%;"></div></div> <nav data-v-27b2cd59="" data-v-1316252e="" data-v-90bffe18="" style="background-color: rgb(255, 255, 255); color: rgb(111, 214, 221);" class="lfe-body"><div data-v-27b2cd59="" style="background-color: rgb(111, 214, 221);"><a data-v-27b2cd59="" href="/" class="logo-wrap"><img data-v-27b2cd59="" src="https://cdn.luogu.com.cn/fe/logo-single.png?0a231b572e3eb12887faedad7d00e829" alt="Luogu"></a></div>  <div data-v-1316252e="" data-v-27b2cd59="" class="popup-button">
-      应用 <svg data-v-1316252e="" data-v-27b2cd59="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-angle-double-right fa-w-14"><path data-v-1316252e="" data-v-27b2cd59="" fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z" class=""></path></svg> <!----></div> <a data-v-303bbf52="" data-v-639bc19b="" data-v-1316252e="" href="/problem/list" colorscheme="none" class="color-none" style="color: inherit;" data-v-27b2cd59=""><span data-v-639bc19b="" data-v-303bbf52="" class="icon"><svg data-v-639bc19b="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-book fa-w-14"><path data-v-639bc19b="" data-v-303bbf52="" fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z" class=""></path></svg></span> <span data-v-639bc19b="" data-v-303bbf52="" class="text">
-      题库
-    </span></a> <a data-v-303bbf52="" data-v-639bc19b="" data-v-1316252e="" href="/training/list" colorscheme="none" class="color-none" style="color: inherit;" data-v-27b2cd59=""><span data-v-639bc19b="" data-v-303bbf52="" class="icon"><svg data-v-639bc19b="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clipboard-list-check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-clipboard-list-check fa-w-12"><path data-v-639bc19b="" data-v-303bbf52="" fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zM65.6 209.4l12.7-12.6c2.1-2.1 5.5-2.1 7.6 0l20.6 20.8 47.6-47.2c2.1-2.1 5.5-2.1 7.6 0l12.6 12.7c2.1 2.1 2.1 5.5 0 7.6l-64.2 63.6c-2.1 2.1-5.5 2.1-7.6 0L65.6 217c-2.1-2.1-2.1-5.5 0-7.6zM96 392c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm224-16c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-128c0 4.4-4.3 8-9.6 8H154.1l32.3-32h124c5.3 0 9.6 3.6 9.6 8v16z" class=""></path></svg></span> <span data-v-639bc19b="" data-v-303bbf52="" class="text">
-      题单
-    </span></a> <a data-v-303bbf52="" data-v-639bc19b="" data-v-1316252e="" href="/contest/list" colorscheme="none" class="color-none" style="color: inherit;" data-v-27b2cd59=""><span data-v-639bc19b="" data-v-303bbf52="" class="icon"><svg data-v-639bc19b="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="signal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-signal fa-w-20"><path data-v-639bc19b="" data-v-303bbf52="" fill="currentColor" d="M216 288h-48c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16zM88 384H40c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16zm256-192h-48c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zm128-96h-48c-8.84 0-16 7.16-16 16v384c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V112c0-8.84-7.16-16-16-16zM600 0h-48c-8.84 0-16 7.16-16 16v480c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V16c0-8.84-7.16-16-16-16z" class=""></path></svg></span> <span data-v-639bc19b="" data-v-303bbf52="" class="text">
-      比赛
-    </span></a> <a data-v-303bbf52="" data-v-639bc19b="" data-v-1316252e="" href="/record/list?user=359140" colorscheme="none" class="color-none" style="color: inherit;" data-v-27b2cd59=""><span data-v-639bc19b="" data-v-303bbf52="" class="icon"><svg data-v-639bc19b="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-pie" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 544 512" class="svg-inline--fa fa-chart-pie fa-w-17"><path data-v-639bc19b="" data-v-303bbf52="" fill="currentColor" d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z" class=""></path></svg></span> <span data-v-639bc19b="" data-v-303bbf52="" class="text">
-      记录
-    </span></a> <a data-v-303bbf52="" data-v-639bc19b="" data-v-1316252e="" href="/discuss/lists" colorscheme="none" class="color-none" style="color: inherit;" data-v-27b2cd59=""><span data-v-639bc19b="" data-v-303bbf52="" class="icon"><svg data-v-639bc19b="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-comments fa-w-18"><path data-v-639bc19b="" data-v-303bbf52="" fill="currentColor" d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z" class=""></path></svg></span> <span data-v-639bc19b="" data-v-303bbf52="" class="text">
-      讨论
-    </span></a></nav> <div data-v-90bffe18="" class="main-container"><div data-v-7958fe72="" data-v-90bffe18="" class="wrapper wrapped lfe-body header-layout tiny"><div data-v-7958fe72="" class="background" style="background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; background-image: url(&quot;https://cdn.luogu.com.cn/upload/image_hosting/v6h03my9.png&quot;), linear-gradient(rgba(111, 214, 221, 0.867), rgba(225, 149, 216, 0.867)); filter: blur(0px) brightness(105%);"></div> <div data-v-46cb0950="" data-v-90bffe18="" class="container" currenttheme="[object Object]" data-v-7958fe72=""><div data-v-46cb0950="" class="left"><img data-v-46cb0950="" src="https://cdn.luogu.com.cn/fe/logo.png?0fdd294ff62e331d2f70e1a37ba4ee02" class="header-logo"></div> <div data-v-46cb0950="" class="link-container"><a data-v-303bbf52="" data-v-46cb0950="" href="//class.luogu.com.cn" target="_blank" colorscheme="none" class="header-link color-none">
-      洛谷网校
-    </a> <a data-v-303bbf52="" data-v-46cb0950="" href="//ti.luogu.com.cn" target="_blank" colorscheme="none" class="header-link color-none">
-      洛谷有题
-    </a> <span data-v-46cb0950="" class="helper"></span></div> <nav data-v-8b0a7778="" data-v-46cb0950="" class="user-nav"><div data-v-034eb354="" data-v-8b0a7778=""><div data-v-034eb354="" class="search-wrap"><input data-v-034eb354="" type="text"></div> <a data-v-303bbf52="" data-v-034eb354="" href="javascript:void 0" colorscheme="none" class="icon color-none"><svg data-v-034eb354="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16"><path data-v-034eb354="" data-v-303bbf52="" fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" class=""></path></svg></a></div> <a data-v-303bbf52="" data-v-8b0a7778="" href="/chat" colorscheme="none" class="icon-btn color-none"><svg data-v-8b0a7778="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-envelope fa-w-16"><path data-v-8b0a7778="" data-v-303bbf52="" fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" class=""></path></svg> <!----></a> <a data-v-303bbf52="" data-v-8b0a7778="" href="/user/notification" colorscheme="none" class="icon-btn color-none"><svg data-v-8b0a7778="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-bell fa-w-14"><path data-v-8b0a7778="" data-v-303bbf52="" fill="currentColor" d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z" class=""></path></svg> <!----></a> <!----> <span data-v-4634c763="" data-v-8b0a7778="" class="wrapper hover" style="--dropdown-transition-delay: .35s;"><span data-v-4634c763="" style="position: relative;"><a data-v-303bbf52="" data-v-8b0a7778="" href="/user/359140" colorscheme="none" class="color-none" data-v-4634c763=""><img data-v-8b0a7778="" data-v-303bbf52="" src="https://cdn.luogu.com.cn/upload/usericon/359140.png" alt="御坂10029号" class="avatar"></a><div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 51px; height: 32px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div></span> <div data-v-4634c763="" class="dropdown" style="top: 22px; right: 0px;"><div data-v-78704ac9="" data-v-8b0a7778="" class="center" data-v-4634c763=""><div data-v-78704ac9="" class="header"><span data-v-6eed723a="" data-v-78704ac9="" class="wrapper"><a data-v-303bbf52="" data-v-6eed723a="" href="/user/359140" target="_blank" colorscheme="none" class="color-none"><span data-v-6eed723a="" style="font-weight: bold; color: rgb(82, 196, 26);" data-v-303bbf52="">
-  御坂10029号
-</span></a> <span data-v-6eed723a=""><a data-v-303bbf52="" href="/discuss/show/142324" target="_blank" colorscheme="none" class="color-none"><svg data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="badge-check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-badge-check fa-w-16" style="--fa-primary-color: #fff; --fa-secondary-color: #52c41a; --fa-secondary-opacity: 1;"><g data-v-303bbf52="" class="fa-group"><path data-v-303bbf52="" fill="currentColor" d="M512 256a88 88 0 0 0-57.1-82.4A88 88 0 0 0 338.4 57.1a88 88 0 0 0-164.8 0A88 88 0 0 0 57.1 173.6a88 88 0 0 0 0 164.8 88 88 0 0 0 116.5 116.5 88 88 0 0 0 164.8 0 88 88 0 0 0 116.5-116.5A88 88 0 0 0 512 256zm-144.8-44.25l-131 130a11 11 0 0 1-15.55-.06l-75.72-76.33a11 11 0 0 1 .06-15.56L171 224a11 11 0 0 1 15.56.06l42.15 42.49 97.2-96.42a11 11 0 0 1 15.55.06l25.82 26a11 11 0 0 1-.08 15.56z" class="fa-secondary"></path><path data-v-303bbf52="" fill="currentColor" d="M367.2 211.75l-131 130a11 11 0 0 1-15.55-.06l-75.72-76.33a11 11 0 0 1 .06-15.56L171 224a11 11 0 0 1 15.56.06l42.15 42.49 97.2-96.42a11 11 0 0 1 15.55.06l25.82 26a11 11 0 0 1-.06 15.56z" class="fa-primary"></path></g></svg></a></span> <!----></span> <!----></div> <div data-v-78704ac9="" class="ops"><a data-v-303bbf52="" data-v-78704ac9="" href="/user/setting" colorscheme="none" class="color-none"><svg data-v-78704ac9="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-user-cog fa-w-20"><path data-v-78704ac9="" data-v-303bbf52="" fill="currentColor" d="M610.5 373.3c2.6-14.1 2.6-28.5 0-42.6l25.8-14.9c3-1.7 4.3-5.2 3.3-8.5-6.7-21.6-18.2-41.2-33.2-57.4-2.3-2.5-6-3.1-9-1.4l-25.8 14.9c-10.9-9.3-23.4-16.5-36.9-21.3v-29.8c0-3.4-2.4-6.4-5.7-7.1-22.3-5-45-4.8-66.2 0-3.3.7-5.7 3.7-5.7 7.1v29.8c-13.5 4.8-26 12-36.9 21.3l-25.8-14.9c-2.9-1.7-6.7-1.1-9 1.4-15 16.2-26.5 35.8-33.2 57.4-1 3.3.4 6.8 3.3 8.5l25.8 14.9c-2.6 14.1-2.6 28.5 0 42.6l-25.8 14.9c-3 1.7-4.3 5.2-3.3 8.5 6.7 21.6 18.2 41.1 33.2 57.4 2.3 2.5 6 3.1 9 1.4l25.8-14.9c10.9 9.3 23.4 16.5 36.9 21.3v29.8c0 3.4 2.4 6.4 5.7 7.1 22.3 5 45 4.8 66.2 0 3.3-.7 5.7-3.7 5.7-7.1v-29.8c13.5-4.8 26-12 36.9-21.3l25.8 14.9c2.9 1.7 6.7 1.1 9-1.4 15-16.2 26.5-35.8 33.2-57.4 1-3.3-.4-6.8-3.3-8.5l-25.8-14.9zM496 400.5c-26.8 0-48.5-21.8-48.5-48.5s21.8-48.5 48.5-48.5 48.5 21.8 48.5 48.5-21.7 48.5-48.5 48.5zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm201.2 226.5c-2.3-1.2-4.6-2.6-6.8-3.9l-7.9 4.6c-6 3.4-12.8 5.3-19.6 5.3-10.9 0-21.4-4.6-28.9-12.6-18.3-19.8-32.3-43.9-40.2-69.6-5.5-17.7 1.9-36.4 17.9-45.7l7.9-4.6c-.1-2.6-.1-5.2 0-7.8l-7.9-4.6c-16-9.2-23.4-28-17.9-45.7.9-2.9 2.2-5.8 3.2-8.7-3.8-.3-7.5-1.2-11.4-1.2h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c10.1 0 19.5-3.2 27.2-8.5-1.2-3.8-2-7.7-2-11.8v-9.2z" class=""></path></svg> 个人设置
-    </a> <a data-v-303bbf52="" data-v-78704ac9="" href="/user/359140#favorite" colorscheme="none" class="color-none"><svg data-v-78704ac9="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="box-heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-box-heart fa-w-14"><path data-v-78704ac9="" data-v-303bbf52="" fill="currentColor" d="M447.6 158.8L391.3 53.9C386.9 40.8 374.7 32 360.9 32H240v128h206.7c.4-.5.5-.7.9-1.2zM0 192v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V192H0zm305.1 149.2l-72.6 71.4c-4.7 4.6-12.3 4.6-17 0l-72.6-71.4c-21.1-20.7-19.8-55.1 3.7-74.2 20.5-16.7 51.1-13.7 70 4.8l7.4 7.3 7.4-7.3c18.8-18.5 49.4-21.5 70-4.8 23.5 19.1 24.7 53.4 3.7 74.2zM208 160V32H87.1c-13.8 0-26 8.8-30.4 21.9L.4 158.8c.4.5.5.7.9 1.2H208z" class=""></path></svg> 我的收藏
-    </a> <a data-v-303bbf52="" data-v-78704ac9="" href="/user/359140#mine.team" colorscheme="none" class="color-none"><svg data-v-78704ac9="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-users fa-w-20"><path data-v-78704ac9="" data-v-303bbf52="" fill="currentColor" d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z" class=""></path></svg> 我的团队
-    </a> <a data-v-303bbf52="" data-v-78704ac9="" href="/user/359140#mine.contest" colorscheme="none" class="color-none"><svg data-v-78704ac9="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="elementor" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-elementor fa-w-14"><path data-v-78704ac9="" data-v-303bbf52="" fill="currentColor" d="M425.6 32H22.4C10 32 0 42 0 54.4v403.2C0 470 10 480 22.4 480h403.2c12.4 0 22.4-10 22.4-22.4V54.4C448 42 438 32 425.6 32M164.3 355.5h-39.8v-199h39.8v199zm159.3 0H204.1v-39.8h119.5v39.8zm0-79.6H204.1v-39.8h119.5v39.8zm0-79.7H204.1v-39.8h119.5v39.8z" class=""></path></svg> 我的比赛
-    </a> <a data-v-303bbf52="" data-v-78704ac9="" href="https://www.luogu.com.cn/blog/suprise/" colorscheme="none" class="color-none"><svg data-v-78704ac9="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="rss" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-rss fa-w-14"><path data-v-78704ac9="" data-v-303bbf52="" fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z" class=""></path></svg> 我的博客
-    </a> <a data-v-303bbf52="" data-v-78704ac9="" href="/user/359140#problem" colorscheme="none" class="color-none"><svg data-v-78704ac9="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-book fa-w-14"><path data-v-78704ac9="" data-v-303bbf52="" fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z" class=""></path></svg> 我的题库
-    </a></div> <footer data-v-78704ac9=""><a data-v-303bbf52="" data-v-78704ac9="" href="javascript:void 0" colorscheme="none" class="color-none"><svg data-v-78704ac9="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-lock fa-w-14"><path data-v-78704ac9="" data-v-303bbf52="" fill="currentColor" d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z" class=""></path></svg> 锁定
-    </a>
-    |
-    <a data-v-303bbf52="" data-v-78704ac9="" href="javascript:void 0" colorscheme="none" class="color-none"><svg data-v-78704ac9="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sign-out-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-sign-out-alt fa-w-16"><path data-v-78704ac9="" data-v-303bbf52="" fill="currentColor" d="M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z" class=""></path></svg> 登出
-    </a></footer></div></div></span></nav></div></div> <main data-v-90bffe18="" class="lfe-body" style="background-color: rgb(239, 239, 239);"><!----><div id="app-old">
-<script>
-
-
-</script>
-<div class="lg-index-content am-center ">
-
-    <div class="am-g">
-        <div class="am-u-md-12 ">
-            <div class="lg-article">
-                <div class="am-g">
-                    <div class="am-u-md-8">
-                        <div class="am-slider am-slider-default" data-am-flexslider="" id="lg-slider">
-                            
-                        <div class="am-viewport" style="overflow: hidden; position: relative;"><ul class="am-slides" style="width: 1000%; transition-duration: 0.6s; transform: translate3d(-1384px, 0px, 0px);"><li class="clone" aria-hidden="true" style="width: 692px; float: left; display: block;"><a target="_blank" href="https://www.luogu.org/discuss/show/47327"><img src="https://cdn.luogu.com.cn/upload/pic/22071.png" draggable="false"></a></li>
-								<li class="" style="width: 692px; float: left; display: block;"><a target="_blank" href="https://class.luogu.com.cn/course/yugu21sxa2"><img src="https://ipic.luogu.com.cn/yugu22s/sx2banner.png" draggable="false"></a></li><li style="width: 692px; float: left; display: block;" class="am-active-slide"><a target="_blank" href="https://item.taobao.com/item.htm?id=637730514783"><img src="https://cdn.luogu.com.cn/upload/image_hosting/v70qsqm4.png" draggable="false"></a></li><li style="width: 692px; float: left; display: block;" class=""><a target="_blank" href="https://www.luogu.org/discuss/show/47327"><img src="https://cdn.luogu.com.cn/upload/pic/22071.png" draggable="false"></a></li>                            <li class="clone" aria-hidden="true" style="width: 692px; float: left; display: block;"><a target="_blank" href="https://class.luogu.com.cn/course/yugu21sxa2"><img src="https://ipic.luogu.com.cn/yugu22s/sx2banner.png" draggable="false"></a></li></ul></div><ol class="am-control-nav am-control-paging"><li><a class="">1</a><i></i></li><li><a class="am-active">2</a><i></i></li><li><a class="">3</a><i></i></li></ol><ul class="am-direction-nav"><li class="am-nav-prev"><a class="am-prev" href="#"> </a></li><li class="am-nav-next"><a class="am-next" href="#"> </a></li></ul></div>
-                    </div>
-                    <div class="am-u-md-4 lg-punch am-text-center">
-                        <h2 style="margin-bottom: 0"><a class="lg-fg-green" href="/user/359140" target="_blank">御坂10029号</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a> 的运势</h2><span class="lg-punch-result lg-fg-red">§ 小吉 §</span><div class="am-g">
-    <div class="am-u-sm-6 lg-fg-red">
-                    <span class="lg-bold">宜：</span>搞基<br>
-            <span class="lg-small">友谊地久天长</span><br>
-            <span class="lg-bold">宜：</span>泡妹子<br>
-            <span class="lg-small">说不定可以牵手</span>
-        
-
-    </div>
-    <div class="am-u-sm-6">
-                    <span class="lg-bold">忌：</span>刷题<br>
-            <span class="lg-small">容易WA</span><br>
-            <span class="lg-bold">忌：</span>装逼<br>
-            <span class="lg-small">被识破</span>
-            </div>
-    <div class="am-u-sm-12 lg-small">
-        &nbsp;<br>
-        你已经在洛谷连续打卡了 <strong>16</strong> 天<br>
-    </div>
-</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="am-g">
-        <div class="am-u-md-3">
-            <div class="lg-article lg-index-stat">
-                <h2>问题跳转</h2>
-                <div class="am-input-group am-input-group-primary am-input-group-sm">
-                    <input type="text" class="am-form-field" placeholder="例：P1001，可跳至A+B" name="toproblem">
-                </div>
-                <p>
-                    <button class="am-btn am-btn-danger am-btn-sm" name="goto">跳转</button>
-                    <button class="am-btn am-btn-primary am-btn-sm" name="gotorandom">随机跳题</button>
-                </p>
-            </div>
-        </div>
-        <div class="am-u-md-9">
-            <div class="lg-article lg-index-stat" style="padding: 0">
-                                    <div class=" am-g" style="height: 100%;padding-top: 10px;">
-                        <div id="container" class="am-u-md-6 am-text-center" style=" height:180px; margin-right: -20px" data-highcharts-chart="0"><div id="highcharts-po1zg6t-0" style="position: relative; overflow: hidden; width: 393px; height: 180px; text-align: left; line-height: normal; z-index: 0; left: 0.899994px; top: 0.116669px;" dir="ltr" class="highcharts-container "><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="393" height="180" viewBox="0 0 393 180"><desc>Created with Highcharts 6.2.0</desc><defs><clipPath id="highcharts-po1zg6t-1"><rect x="0" y="0" width="311" height="133" fill="none"></rect></clipPath></defs><rect fill="rgba(0,0,0,0)" class="highcharts-background" x="0" y="0" width="393" height="180" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="72" y="10" width="311" height="133"></rect><g class="highcharts-pane-group" data-z-index="0"></g><g class="highcharts-grid highcharts-xaxis-grid " data-z-index="1"><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 84.5 10 L 84.5 143" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 136.5 10 L 136.5 143" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 188.5 10 L 188.5 143" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 239.5 10 L 239.5 143" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 291.5 10 L 291.5 143" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 343.5 10 L 343.5 143" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid " data-z-index="1"><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 72 143.5 L 383 143.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 72 77.5 L 383 77.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 72 9.5 L 383 9.5" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid " data-z-index="1"><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 72 143.5 L 383 143.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 72 77.5 L 383 77.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 72 9.5 L 383 9.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="72" y="10" width="311" height="133"></rect><g class="highcharts-axis highcharts-xaxis " data-z-index="2"><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 84.5 143 L 84.5 153" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 136.5 143 L 136.5 153" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 188.5 143 L 188.5 153" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 239.5 143 L 239.5 153" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 291.5 143 L 291.5 153" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 343.5 143 L 343.5 153" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" data-z-index="7" d="M 72 143.5 L 383 143.5"></path></g><g class="highcharts-axis highcharts-yaxis " data-z-index="2"><text x="26.149999618530273" data-z-index="7" text-anchor="middle" transform="translate(0,0) rotate(270 26.149999618530273 76.5)" class="highcharts-axis-title" style="color:Highcharts.getOptions().colors[1];fill:Highcharts.getOptions().colors[1];" y="76.5"><tspan>累积通过</tspan></text><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 72 10 L 72 143"></path></g><g class="highcharts-axis highcharts-yaxis " data-z-index="2"><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 383 10 L 383 143"></path></g><g class="highcharts-series-group" data-z-index="3"><g data-z-index="0.1" class="highcharts-series highcharts-series-0 highcharts-area-series highcharts-color-0 " transform="translate(72,10) scale(1 1)" clip-path="url(#highcharts-po1zg6t-1)"><path fill="rgba(124,181,236,0.75)" d="M 12.958333333333 128.28958333333333 L 38.875 128.28958333333333 L 64.791666666667 128.28958333333333 L 90.708333333333 128.28958333333333 L 116.625 128.28958333333333 L 142.54166666667 124.41041666666666 L 168.45833333333 123.85625 L 194.375 123.85625 L 220.29166666667 121.3625 L 246.20833333333 117.20625 L 272.125 110.00208333333333 L 298.04166666667 69.27083333333333 L 298.04166666667 133 L 272.125 133 L 246.20833333333 133 L 220.29166666667 133 L 194.375 133 L 168.45833333333 133 L 142.54166666667 133 L 116.625 133 L 90.708333333333 133 L 64.791666666667 133 L 38.875 133 L 12.958333333333 133" class="highcharts-area" data-z-index="0"></path><path fill="none" d="M 12.958333333333 128.28958333333333 L 38.875 128.28958333333333 L 64.791666666667 128.28958333333333 L 90.708333333333 128.28958333333333 L 116.625 128.28958333333333 L 142.54166666667 124.41041666666666 L 168.45833333333 123.85625 L 194.375 123.85625 L 220.29166666667 121.3625 L 246.20833333333 117.20625 L 272.125 110.00208333333333 L 298.04166666667 69.27083333333333" class="highcharts-graph" data-z-index="1" stroke="#7cb5ec" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 2.958333333333 128.28958333333333 L 12.958333333333 128.28958333333333 L 38.875 128.28958333333333 L 64.791666666667 128.28958333333333 L 90.708333333333 128.28958333333333 L 116.625 128.28958333333333 L 142.54166666667 124.41041666666666 L 168.45833333333 123.85625 L 194.375 123.85625 L 220.29166666667 121.3625 L 246.20833333333 117.20625 L 272.125 110.00208333333333 L 298.04166666667 69.27083333333333 L 308.04166666667 69.27083333333333" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="22" visibility="visible" data-z-index="2" class="highcharts-tracker-line"></path></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-0 highcharts-area-series highcharts-color-0 highcharts-tracker" transform="translate(72,10) scale(1 1)"><path fill="#7cb5ec" d="M 16 128 A 4 4 0 1 1 15.999998000000167 127.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 42 128 A 4 4 0 1 1 41.99999800000017 127.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 68 128 A 4 4 0 1 1 67.99999800000016 127.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 94 128 A 4 4 0 1 1 93.99999800000016 127.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 120 128 A 4 4 0 1 1 119.99999800000016 127.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 146 124 A 4 4 0 1 1 145.99999800000018 123.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 172 124 A 4 4 0 1 1 171.99999800000018 123.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 198 124 A 4 4 0 1 1 197.99999800000018 123.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 224 121 A 4 4 0 1 1 223.99999800000018 120.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 250 117 A 4 4 0 1 1 249.99999800000018 116.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 276 110 A 4 4 0 1 1 275.9999980000002 109.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 302 69 A 4 4 0 1 1 301.9999980000002 68.99600000066667 Z" class="highcharts-point highcharts-color-0"></path></g><g data-z-index="0.1" class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-color-1 highcharts-tracker" transform="translate(72,10) scale(1 1)" clip-path="url(#highcharts-po1zg6t-1)"><rect x="6.5" y="132.5" width="13" height="1" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="32.5" y="133.5" width="13" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="58.5" y="133.5" width="13" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="83.5" y="133.5" width="13" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="109.5" y="133.5" width="13" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="135.5" y="121.5" width="13" height="12" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="161.5" y="131.5" width="13" height="2" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="187.5" y="133.5" width="13" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="213.5" y="126.5" width="13" height="7" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="239.5" y="121.5" width="13" height="12" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="265.5" y="110.5" width="13" height="23" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="291.5" y="9.5" width="13" height="124" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-1 highcharts-column-series highcharts-color-1 " transform="translate(72,10) scale(1 1)" clip-path="none"></g></g><text x="197" text-anchor="middle" class="highcharts-title" data-z-index="4" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text><text x="197" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color:#666666;fill:#666666;" y="24"></text><g class="highcharts-axis-labels highcharts-xaxis-labels " data-z-index="7"><text x="84.958333333333" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="162" opacity="1">Feb</text><text x="136.79166666667" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="162" opacity="1">Apr</text><text x="188.625" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="162" opacity="1">Jun</text><text x="240.45833333333" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="162" opacity="1">Aug</text><text x="292.29166666667" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="162" opacity="1">Oct</text><text x="344.125" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="162" opacity="1">Dec</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels " data-z-index="7"><text x="57" style="color:Highcharts.getOptions().colors[1];cursor:default;font-size:11px;fill:Highcharts.getOptions().colors[1];" text-anchor="end" transform="translate(0,0)" y="147" opacity="1">0</text><text x="57" style="color:Highcharts.getOptions().colors[1];cursor:default;font-size:11px;fill:Highcharts.getOptions().colors[1];" text-anchor="end" transform="translate(0,0)" y="81" opacity="1">240</text><text x="57" style="color:Highcharts.getOptions().colors[1];cursor:default;font-size:11px;fill:Highcharts.getOptions().colors[1];" text-anchor="end" transform="translate(0,0)" y="14" opacity="1">480</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels " data-z-index="7"></g></svg></div></div>
-                        <div id="container2" class="am-u-md-6 am-text-center" style=" height:180px " data-highcharts-chart="1"><div id="highcharts-po1zg6t-28" style="position: relative; overflow: hidden; width: 393px; height: 180px; text-align: left; line-height: normal; z-index: 0; left: 0.400024px; top: 0.116669px;" dir="ltr" class="highcharts-container "><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="393" height="180" viewBox="0 0 393 180"><desc>Created with Highcharts 6.2.0</desc><defs><clipPath id="highcharts-po1zg6t-29"><rect x="0" y="0" width="318" height="133" fill="none"></rect></clipPath></defs><rect fill="rgba(0,0,0,0)" class="highcharts-background" x="0" y="0" width="393" height="180" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="10" y="10" width="318" height="133"></rect><g class="highcharts-pane-group" data-z-index="0"></g><g class="highcharts-grid highcharts-xaxis-grid " data-z-index="1"><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 15.5 10 L 15.5 143" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 74.5 10 L 74.5 143" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 133.5 10 L 133.5 143" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 192.5 10 L 192.5 143" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 250.5 10 L 250.5 143" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 309.5 10 L 309.5 143" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid " data-z-index="1"><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 10 143.5 L 328 143.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 10 77.5 L 328 77.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 10 9.5 L 328 9.5" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid " data-z-index="1"><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 10 143.5 L 328 143.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 10 77.5 L 328 77.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 10 9.5 L 328 9.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="10" y="10" width="318" height="133"></rect><g class="highcharts-axis highcharts-xaxis " data-z-index="2"><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 15.5 143 L 15.5 153" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 74.5 143 L 74.5 153" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 133.5 143 L 133.5 153" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 192.5 143 L 192.5 153" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 250.5 143 L 250.5 153" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 309.5 143 L 309.5 153" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" data-z-index="7" d="M 10 143.5 L 328 143.5"></path></g><g class="highcharts-axis highcharts-yaxis " data-z-index="2"><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 10 10 L 10 143"></path></g><g class="highcharts-axis highcharts-yaxis " data-z-index="2"><text x="366.8999996185303" data-z-index="7" text-anchor="middle" transform="translate(0,0) rotate(90 366.8999996185303 76.5)" class="highcharts-axis-title" style="color:Highcharts.getOptions().colors[3];fill:Highcharts.getOptions().colors[3];" y="76.5"><tspan>新通过</tspan></text><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 328 10 L 328 143"></path></g><g class="highcharts-series-group" data-z-index="3"><g data-z-index="0.1" class="highcharts-series highcharts-series-0 highcharts-area-series highcharts-color-0 " transform="translate(10,10) scale(1 1)" clip-path="url(#highcharts-po1zg6t-29)"><path fill="rgba(124,181,236,0.75)" d="M 5.8888888888889 108.0625 L 17.666666666667 108.0625 L 29.444444444444 70.65625 L 41.222222222222 70.65625 L 53 70.65625 L 64.777777777778 70.65625 L 76.555555555556 70.65625 L 88.333333333333 70.65625 L 100.11111111111 70.65625 L 111.88888888889 70.65625 L 111.88888888889 133 L 111.88888888889 133 L 111.88888888889 133 L 100.11111111111 133 L 88.333333333333 133 L 76.555555555556 133 L 64.777777777778 133 L 53 133 L 41.222222222222 133 L 29.444444444444 133 L 17.666666666667 133 L 5.8888888888889 133" class="highcharts-area" data-z-index="0"></path><path fill="none" d="M 5.8888888888889 108.0625 L 17.666666666667 108.0625 L 29.444444444444 70.65625 L 41.222222222222 70.65625 L 53 70.65625 L 64.777777777778 70.65625 L 76.555555555556 70.65625 L 88.333333333333 70.65625 L 100.11111111111 70.65625 L 111.88888888889 70.65625" class="highcharts-graph" data-z-index="1" stroke="#7cb5ec" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -4.1111111111111 108.0625 L 5.8888888888889 108.0625 L 17.666666666667 108.0625 L 29.444444444444 70.65625 L 41.222222222222 70.65625 L 53 70.65625 L 64.777777777778 70.65625 L 76.555555555556 70.65625 L 88.333333333333 70.65625 L 100.11111111111 70.65625 L 111.88888888889 70.65625 L 121.88888888889 70.65625" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="22" visibility="visible" data-z-index="2" class="highcharts-tracker-line"></path></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-0 highcharts-area-series highcharts-color-0 highcharts-tracker" transform="translate(10,10) scale(1 1)"><path fill="#7cb5ec" d="M 9 108 A 4 4 0 1 1 8.999998000000167 107.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 21 108 A 4 4 0 1 1 20.99999800000017 107.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 33 71 A 4 4 0 1 1 32.99999800000017 70.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 45 71 A 4 4 0 1 1 44.99999800000017 70.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 57 71 A 4 4 0 1 1 56.99999800000017 70.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 68 71 A 4 4 0 1 1 67.99999800000016 70.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 80 71 A 4 4 0 1 1 79.99999800000016 70.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 92 71 A 4 4 0 1 1 91.99999800000016 70.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 104 71 A 4 4 0 1 1 103.99999800000016 70.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 115 71 A 4 4 0 1 1 114.99999800000016 70.99600000066667 Z" class="highcharts-point highcharts-color-0"></path></g><g data-z-index="0.1" class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-color-1 highcharts-tracker" transform="translate(10,10) scale(1 1)" clip-path="url(#highcharts-po1zg6t-29)"><rect x="2.5" y="133.5" width="6" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="14.5" y="133.5" width="6" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="26.5" y="13.5" width="6" height="120" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="37.5" y="133.5" width="6" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="49.5" y="133.5" width="6" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="61.5" y="133.5" width="6" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="73.5" y="133.5" width="6" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="85.5" y="133.5" width="6" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="96.5" y="133.5" width="6" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="108.5" y="133.5" width="6" height="0" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-1 highcharts-column-series highcharts-color-1 " transform="translate(10,10) scale(1 1)" clip-path="none"></g></g><text x="197" text-anchor="middle" class="highcharts-title" data-z-index="4" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text><text x="197" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color:#666666;fill:#666666;" y="24"></text><g class="highcharts-axis-labels highcharts-xaxis-labels " data-z-index="7"><text x="23.608333587646484" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="162" opacity="1">02-1</text><text x="74.777777777778" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="162" opacity="1">02-6</text><text x="133.66666666667" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="162" opacity="1">02-11</text><text x="192.55555555556" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="162" opacity="1">02-16</text><text x="251.44444444444" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="162" opacity="1">02-21</text><text x="310.33333333333" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="162" opacity="1">02-26</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels " data-z-index="7"></g><g class="highcharts-axis-labels highcharts-yaxis-labels " data-z-index="7"><text x="343" style="color:Highcharts.getOptions().colors[3];cursor:default;font-size:11px;fill:Highcharts.getOptions().colors[3];" text-anchor="start" transform="translate(0,0)" y="147" opacity="1">0</text><text x="343" style="color:Highcharts.getOptions().colors[3];cursor:default;font-size:11px;fill:Highcharts.getOptions().colors[3];" text-anchor="start" transform="translate(0,0)" y="81" opacity="1">5</text><text x="343" style="color:Highcharts.getOptions().colors[3];cursor:default;font-size:11px;fill:Highcharts.getOptions().colors[3];" text-anchor="start" transform="translate(0,0)" y="14" opacity="1">10</text></g></svg></div></div>
-                    </div>
-                    <script>
-                        $(function () {
-                            $('#container').highcharts({"title":{"text":"","floating":true},"chart":{"backgroundColor":"rgba(0,0,0,0)"},"legend":{"enabled":false},"xAxis":{"categories":["Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan"],"floating":true,"minTickInterval":2},"yAxis":[{"labels":{"format":"{value}","style":{"color":"Highcharts.getOptions().colors[1]"}},"title":{"text":"\u7d2f\u79ef\u901a\u8fc7","style":{"color":"Highcharts.getOptions().colors[1]"}},"floor":12},{"labels":{"format":"{value}","style":{"color":"Highcharts.getOptions().colors[3]"},"enabled":false},"title":{"text":"\u65b0\u901a\u8fc7","style":{"color":"Highcharts.getOptions().colors[3]"},"enabled":false},"opposite":true}],"tooltip":{"shared":true},"series":[{"name":"\u7d2f\u79ef\u901a\u8fc7\u6570","type":"area","data":[17,17,17,17,17,31,33,33,42,57,83,230]},{"name":"\u5f53\u6708\u901a\u8fc7\u6570","type":"column","data":[1,0,0,0,0,14,2,0,9,15,28,149],"yAxis":1}],"credits":{"enabled":false}});
-                            $('#container2').highcharts({"title":{"text":"","floating":true},"chart":{"backgroundColor":"rgba(0,0,0,0)"},"legend":{"enabled":false},"xAxis":{"categories":["02-1","02-2","02-3","02-4","02-5","02-6","02-7","02-8","02-9","02-10","02-11","02-12","02-13","02-14","02-15","02-16","02-17","02-18","02-19","02-20","02-21","02-22","02-23","02-24","02-25","02-26","02-27","02-28"],"floating":true,"minTickInterval":5},"yAxis":[{"labels":{"format":"{value}","style":{"color":"Highcharts.getOptions().colors[1]"},"enabled":false},"title":{"text":"\u7d2f\u79ef\u901a\u8fc7","style":{"color":"Highcharts.getOptions().colors[1]"},"enabled":false},"floor":225},{"labels":{"format":"{value}","style":{"color":"Highcharts.getOptions().colors[3]"}},"title":{"text":"\u65b0\u901a\u8fc7","style":{"color":"Highcharts.getOptions().colors[3]"}},"opposite":true}],"tooltip":{"shared":true},"series":[{"name":"\u7d2f\u79ef\u901a\u8fc7\u6570","type":"area","data":[230,230,239,239,239,239,239,239,239,239,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]},{"name":"\u5f53\u65e5\u901a\u8fc7\u6570","type":"column","data":[0,0,9,0,0,0,0,0,0,0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"yAxis":1}],"credits":{"enabled":false}});
-                        });
-                    </script>
-                            </div>
-        </div>
-    </div>
-
-    
-    <div class="am-g">
-        <div class="am-u-lg-3 am-u-md-4 lg-right">
-            <div class="lg-article">
-                <h2>本站公告</h2>
-                                    <p><a data-pjax="" href="/discuss/241461">洛谷新用户必读</a></p>
-                                    <p><a data-pjax="" href="/discuss/244341">【集合贴】公告整合贴</a></p>
-                                    <p><a data-pjax="" href="/discuss/174811">洛谷主题库题目规范</a></p>
-                                    <p><a data-pjax="" href="/discuss/174934">题解审核及反馈要求</a></p>
-                                    <p><a data-pjax="" href="/discuss/174936">公开比赛要求</a></p>
-                                    <p><a data-pjax="" href="/discuss/327478">管理员名单</a></p>
-                                    <p><a data-pjax="" href="/discuss/86673">评测机语言环境信息</a></p>
-                                    <p><a data-pjax="" href="/discuss/223773">洛谷更新日志</a></p>
-                            </div>
-                            <div class="lg-article">
-                                        <h2>任务计划
-                                                    <button name="task-edit" class="am-btn am-btn-sm am-btn-primary lg-right" onclick="$('.tasklist-edit').show();$(this).hide();$('[name=task-end-edit]').show()">编辑</button>
-                            <button name="task-end-edit" class="am-btn am-btn-sm am-btn-danger lg-right " onclick="$('.tasklist-edit').hide();$(this).hide();$('[name=task-edit]').show()" style="display: none;">结束编辑</button>
-                                            </h2>
-                                                                    <div class="tasklist-item" data-pid="P5459">
-                            <div><a href="/record/list?user=359140&amp;pid=P5459" target="_blank"><strong class="lg-fg-red">20</strong></a><a class="colored" style="padding-left: 3px" href="/problem/P5459" target="_blank"><b>P5459</b> [BJOI2016]回转寿司</a></div>
-                            <div style="margin:10px 0;display:none;" class="tasklist-edit">
-                                <button class="am-btn am-btn-sm am-btn-success" data-pid="P5459">完成任务</button>
-                                <hr>
-                            </div>
-                        </div>
-                                                                    <div class="tasklist-item" data-pid="P6348">
-                            <div><a href="/record/list?user=359140&amp;pid=P6348" target="_blank"><strong class="lg-fg-orange">48</strong></a><a class="colored" style="padding-left: 3px" href="/problem/P6348" target="_blank"><b>P6348</b> [PA2011]Journeys</a></div>
-                            <div style="margin:10px 0;display:none;" class="tasklist-edit">
-                                <button class="am-btn am-btn-sm am-btn-success" data-pid="P6348">完成任务</button>
-                                <hr>
-                            </div>
-                        </div>
-                                                                    <div class="tasklist-item" data-pid="P3287">
-                            <div><a href="/record/list?user=359140&amp;pid=P3287" target="_blank"><strong class="lg-fg-red">0</strong></a><a class="colored" style="padding-left: 3px" href="/problem/P3287" target="_blank"><b>P3287</b> [SCOI2014]方伯伯的玉米田</a></div>
-                            <div style="margin:10px 0;display:none;" class="tasklist-edit">
-                                <button class="am-btn am-btn-sm am-btn-success" data-pid="P3287">完成任务</button>
-                                <hr>
-                            </div>
-                        </div>
-                                        <script>
-                        $(".tasklist-edit").children("button").click(function() {
-                            var pid = $(this).attr('data-pid');
-                            $.ajax({
-                                type: "post",
-                                url: '/fe/api/problem/tasklistRemove',
-                                data: JSON.stringify({
-                                    pid: pid
-                                }),
-                                contentType: "application/json; charset=utf-8",
-                                dataType: "json",
-                            })
-                            $("div.tasklist-item[data-pid="+pid+"]").hide();
-                        });
-                    </script>
-                    <h2>智能推荐</h2>
-                                            <div><div><a href="/record/list?user=359140&amp;pid=P2669" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a><a class="colored" style="padding-left: 3px" href="/problemnew/show/P2669" target="_blank"><b>P2669</b> [NOIP2015 普及组] 金币</a></div></div>
-                                            <div><div><a href="/record/list?user=359140&amp;pid=P1886" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a><a class="colored" style="padding-left: 3px" href="/problemnew/show/P1886" target="_blank"><b>P1886</b> 滑动窗口 /【模板】单调队列</a></div></div>
-                                            <div><div><a href="/record/list?user=359140&amp;pid=P1063" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a><a class="colored" style="padding-left: 3px" href="/problemnew/show/P1063" target="_blank"><b>P1063</b> [NOIP2006 提高组] 能量项链</a></div></div>
-                                            <div><div><a href="/record/list?user=359140&amp;pid=P2627" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a><a class="colored" style="padding-left: 3px" href="/problemnew/show/P2627" target="_blank"><b>P2627</b> [USACO11OPEN]Mowing the Lawn G</a></div></div>
-                                            <div><div><a href="/record/list?user=359140&amp;pid=P1909" target="_blank"><strong class=""><i class="am-icon-minus"></i></strong></a><a class="colored" style="padding-left: 3px" href="/problemnew/show/P1909" target="_blank"><b>P1909</b> [NOIP2016 普及组] 买铅笔</a></div></div>
-                                        <div><small><br>洛谷根据您近期的做题情况，使用机器学习自动为您推荐符合您目前程度的题目。本列表每日更新一次。</small></div>
-                </div>
-            
-            <div class="lg-article am-hide-sm">
-                <h2>友情链接</h2>
-                <p>
-                    <strong>推荐题库</strong><br>
-                    <a href="https://loj.ac/" target="_blank">LibreOJ</a> |
-                    <a href="https://vijos.org/" target="_blank">Vijos</a> |
-                    <a href="https://hydro.ac/" target="_blank">HydroOJ</a>
-                </p>
-                <p>
-                    <strong>洛谷开源项目</strong><br>
-                    <a href="/discuss/show?postid=11410" target="_blank">CYaRon 测试数据生成器</a><br>
-                    <a href="https://github.com/luogu-dev/markdown-palettes" target="_blank">Markdown*Palettes</a>
-                </p>
-                <p>
-                    <strong>洛谷服务</strong><br>
-                    <a href="/discuss/show/273220" target="_blank">《深入浅出程序设计竞赛》</a><br>
-                    <a href="https://class.luogu.com.cn" target="_blank">洛谷网校 - 算法竞赛学习</a><br>
-                    <a href="https://www.zhihu.com/answer/1629008261" target="_blank">学校编程训练辅助工具</a><br>
-                    <a href="https://zhuanlan.zhihu.com/p/338174582" target="_blank">协办企业院校在线编程比赛</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="am-u-lg-9 am-u-md-8 lg-index-benben lg-right">
-            <div class="lg-article">
-                <h2 style="margin-bottom: 5px;">近期比赛</h2>
-                                                        <section class="am-panel lg-index-contest am-panel-success">
-                        <header class="am-panel-hd">
-                            <h3 class="am-panel-title">
-                                <a href="/contest/59527">
-                                    「PMOI」Round · 05 Div.1
-                                </a>
-                                <span class="am-badge am-radius lg-bg-green">Rated</span>
-                            </h3>
-                        </header>
-                        <div class="am-panel-bd">
-                            <span class="lg-small lg-inline-up">
-                                <span class="am-badge am-radius lg-bg-greendark">团队公开赛</span><br>
-                                <span class="am-badge am-radius lg-bg-yellow">IOI</span>                            </span>
-                            <span class="lg-small lg-inline-up">
-                                <strong class="lg-fg-green">未开始</strong>                                2天1时23分后                                <br>
-                                                                    <a class="colored" href="/team/show?teamid=28169" target="_blank">PMOI 出题组</a>                                
-                            </span>
-                            <span class="lg-small lg-inline-up lg-right lg-md-hide">
-                                02-13 13:00<br>
-                                02-13 18:00                            </span>
-                        </div>
-                    </section>
-                                                        <section class="am-panel lg-index-contest am-panel-success">
-                        <header class="am-panel-hd">
-                            <h3 class="am-panel-title">
-                                <a href="/contest/50658">
-                                    「PMOI」Round · 05 Div.2
-                                </a>
-                                <span class="am-badge am-radius lg-bg-green">Rated</span>
-                            </h3>
-                        </header>
-                        <div class="am-panel-bd">
-                            <span class="lg-small lg-inline-up">
-                                <span class="am-badge am-radius lg-bg-greendark">团队公开赛</span><br>
-                                <span class="am-badge am-radius lg-bg-yellow">IOI</span>                            </span>
-                            <span class="lg-small lg-inline-up">
-                                <strong class="lg-fg-green">未开始</strong>                                2天1时23分后                                <br>
-                                                                    <a class="colored" href="/team/show?teamid=28169" target="_blank">PMOI 出题组</a>                                
-                            </span>
-                            <span class="lg-small lg-inline-up lg-right lg-md-hide">
-                                02-13 13:00<br>
-                                02-13 18:00                            </span>
-                        </div>
-                    </section>
-                                                        <section class="am-panel lg-index-contest am-panel-success">
-                        <header class="am-panel-hd">
-                            <h3 class="am-panel-title">
-                                <a href="/contest/60884">
-                                    EFOI 情人节专题 Round 1 Div.2
-                                </a>
-                                
-                            </h3>
-                        </header>
-                        <div class="am-panel-bd">
-                            <span class="lg-small lg-inline-up">
-                                <span class="am-badge am-radius lg-bg-greendark">团队公开赛</span><br>
-                                <span class="am-badge am-radius lg-bg-yellow">IOI</span>                            </span>
-                            <span class="lg-small lg-inline-up">
-                                <strong class="lg-fg-green">未开始</strong>                                1天6时23分后                                <br>
-                                                                    <a class="colored" href="/team/show?teamid=41041" target="_blank">EFOI公开赛组</a>                                
-                            </span>
-                            <span class="lg-small lg-inline-up lg-right lg-md-hide">
-                                02-12 18:00<br>
-                                02-12 22:00                            </span>
-                        </div>
-                    </section>
-                                                        <section class="am-panel lg-index-contest am-panel-success">
-                        <header class="am-panel-hd">
-                            <h3 class="am-panel-title">
-                                <a href="/contest/60882">
-                                    EFOI 情人节专题 Round 1 Div.1
-                                </a>
-                                
-                            </h3>
-                        </header>
-                        <div class="am-panel-bd">
-                            <span class="lg-small lg-inline-up">
-                                <span class="am-badge am-radius lg-bg-greendark">团队公开赛</span><br>
-                                <span class="am-badge am-radius lg-bg-yellow">IOI</span>                            </span>
-                            <span class="lg-small lg-inline-up">
-                                <strong class="lg-fg-green">未开始</strong>                                1天6时23分后                                <br>
-                                                                    <a class="colored" href="/team/show?teamid=41041" target="_blank">EFOI公开赛组</a>                                
-                            </span>
-                            <span class="lg-small lg-inline-up lg-right lg-md-hide">
-                                02-12 18:00<br>
-                                02-12 22:00                            </span>
-                        </div>
-                    </section>
-                                                        <section class="am-panel lg-index-contest am-panel-success">
-                        <header class="am-panel-hd">
-                            <h3 class="am-panel-title">
-                                <a href="/contest/61868">
-                                    [Mivik Round] 梦境彼岸
-                                </a>
-                                <span class="am-badge am-radius lg-bg-green">Rated</span>
-                            </h3>
-                        </header>
-                        <div class="am-panel-bd">
-                            <span class="lg-small lg-inline-up">
-                                <span class="am-badge am-radius lg-bg-bluelight">个人公开赛</span><br>
-                                <span class="am-badge am-radius lg-bg-yellow">IOI</span>                            </span>
-                            <span class="lg-small lg-inline-up">
-                                <strong class="lg-fg-green">未开始</strong>                                1天2时23分后                                <br>
-                                                                    <a class="lg-fg-red lg-bold" href="/user/45182" target="_blank">Mivik</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#f1c40f" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a>                                
-                            </span>
-                            <span class="lg-small lg-inline-up lg-right lg-md-hide">
-                                02-12 14:00<br>
-                                02-12 17:00                            </span>
-                        </div>
-                    </section>
-                                                        <section class="am-panel lg-index-contest am-panel-success">
-                        <header class="am-panel-hd">
-                            <h3 class="am-panel-title">
-                                <a href="/contest/60601">
-                                    JRKSJ 的比赛 Round 4
-                                </a>
-                                <span class="am-badge am-radius lg-bg-green">Rated</span>
-                            </h3>
-                        </header>
-                        <div class="am-panel-bd">
-                            <span class="lg-small lg-inline-up">
-                                <span class="am-badge am-radius lg-bg-greendark">团队公开赛</span><br>
-                                <span class="am-badge am-radius lg-bg-yellow">IOI</span>                            </span>
-                            <span class="lg-small lg-inline-up">
-                                <strong class="lg-fg-green">未开始</strong>                                1时23分后                                <br>
-                                                                    <a class="colored" href="/team/show?teamid=32209" target="_blank">JRKSJ 出题组</a>                                
-                            </span>
-                            <span class="lg-small lg-inline-up lg-right lg-md-hide">
-                                02-11 13:00<br>
-                                02-11 18:30                            </span>
-                        </div>
-                    </section>
-                            </div>
-            <div class="lg-article">
-                <h2>最近讨论</h2>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/75840" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/75840.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=47327">
-                                【日报#381】浅谈集合幂级数
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-red lg-bold" href="/user/75840" target="_blank">Alpha1022</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#f1c40f" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=academics">
-                        学术版
-                    </a><br>
-                    @ 07-03 12:07
-                    <span class="lg-small">10663回复</span>
-                                                    <span class="am-badge am-radius lg-bg-red">置顶</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/502832" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/502832.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=408155">
-                                JRKSJ 的比赛 Round 4 赛时答疑…
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-bluelight" href="/user/502832" target="_blank">JRKSJ出题组</a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=academics">
-                        学术版
-                    </a><br>
-                    @ 02-11 08:22
-                    <span class="lg-small">32回复</span>
-                                                    <span class="am-badge am-radius lg-bg-red">置顶</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/330759" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/330759.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=406263">
-                                洛谷 2 月月赛 I &amp; WdOI R1.5 /…
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-red lg-bold" href="/user/330759" target="_blank">囧仙</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#f1c40f" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=academics">
-                        学术版
-                    </a><br>
-                    @ 02-06 23:54
-                    <span class="lg-small">35回复</span>
-                                                    <span class="am-badge am-radius lg-bg-red">置顶</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/8457" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/8457.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=405105">
-                                2022 北京冬奥会讨论专贴
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-purple lg-bold" href="/user/8457" target="_blank">chen_zhe</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#3498db" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a>&nbsp;<span class="am-badge am-radius lg-bg-purple">Aya</span></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=relevantaffairs">
-                        灌水区
-                    </a><br>
-                    @ 02-01 20:07
-                    <span class="lg-small">3007回复</span>
-                                                    <span class="am-badge am-radius lg-bg-red">置顶</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/8457" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/8457.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=303182">
-                                学术版内容严管规定
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-purple lg-bold" href="/user/8457" target="_blank">chen_zhe</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#3498db" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a>&nbsp;<span class="am-badge am-radius lg-bg-purple">Aya</span></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=siteaffairs">
-                        站务版
-                    </a><br>
-                    @ 03-07 17:19
-                    <span class="lg-small">432回复</span>
-                                                    <span class="am-badge am-radius lg-bg-red">置顶</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/3" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/3.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=152590">
-                                （9.5 更新）洛谷讨论区规范
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-purple lg-bold" href="/user/3" target="_blank">洛谷</a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=siteaffairs">
-                        站务版
-                    </a><br>
-                    @ 10-09 23:10
-                    <span class="lg-small">1788回复</span>
-                                                    <span class="am-badge am-radius lg-bg-red">置顶</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/648772" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/648772.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=408257">
-                                11分求助（萌新中的萌新）
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-bluelight" href="/user/648772" target="_blank">Liyuqiao11</a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=P1201">
-                        P1201 [USACO1.1]贪…
-                    </a><br>
-                    @ 02-11 11:34
-                    <span class="lg-small">0回复</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/504884" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/504884.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=408256">
-                                【违规紫衫】关于 farmerjohn2
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-bluelight" href="/user/504884" target="_blank">我是只小萌新</a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=relevantaffairs">
-                        灌水区
-                    </a><br>
-                    @ 02-11 11:33
-                    <span class="lg-small">0回复</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/180924" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/180924.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=408255">
-                                萌新跪求好用的离散化树状数组板…
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-green" href="/user/180924" target="_blank">FLAT_LCH</a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=relevantaffairs">
-                        灌水区
-                    </a><br>
-                    @ 02-11 11:33
-                    <span class="lg-small">0回复</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/576316" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/576316.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=408254">
-                                关于博客园
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-green" href="/user/576316" target="_blank">kapu12</a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=relevantaffairs">
-                        灌水区
-                    </a><br>
-                    @ 02-11 11:33
-                    <span class="lg-small">0回复</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/542680" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/542680.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=408253">
-                                求题目
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-bluelight" href="/user/542680" target="_blank">我爱高科技</a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=relevantaffairs">
-                        灌水区
-                    </a><br>
-                    @ 02-11 11:32
-                    <span class="lg-small">0回复</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/401052" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/401052.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=408250">
-                                蒟蒻求助题面
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-green" href="/user/401052" target="_blank">Endline</a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=P8123">
-                        P8123 [BalticOI 2…
-                    </a><br>
-                    @ 02-11 11:27
-                    <span class="lg-small">2回复</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/451825" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/451825.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=408248">
-                                【违规紫衫】关于-1号用户
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-red lg-bold" href="/user/451825" target="_blank">DGuru</a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=relevantaffairs">
-                        灌水区
-                    </a><br>
-                    @ 02-11 11:23
-                    <span class="lg-small">9回复</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/519276" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/519276.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=408247">
-                                家人们我这代码是怎么了
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-green" href="/user/519276" target="_blank">God_bless_Alex_again</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=relevantaffairs">
-                        灌水区
-                    </a><br>
-                    @ 02-11 11:21
-                    <span class="lg-small">7回复</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/321619" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/321619.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=408246">
-                                翻译不全
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-green" href="/user/321619" target="_blank">xiongyushun</a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=CF1633E">
-                        CF1633E Spanning …
-                    </a><br>
-                    @ 02-11 11:18
-                    <span class="lg-small">0回复</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                                <section class="am-panel lg-index-contest am-panel-primary">
-
-                    <div class="am-panel-bd">
-                        <div class="lg-inline-up"><a href="/user/212320" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/212320.png" class="am-comment-avatar">
-    </a></div>
-                        <div class="lg-inline-up">
-                            <a data-pjax="" href="/discuss/show?postid=408245">
-                                疑似五倍经验
-                            </a>
-
-                            <br>
-                            <span class="lg-small"><a class="lg-fg-green" href="/user/212320" target="_blank">Cstring_</a></span>
-                            <span class="lg-small">In
-                    <a href="/discuss/lists?forumname=P4331">
-                        P4331 [BalticOI 2…
-                    </a><br>
-                    @ 02-11 11:17
-                    <span class="lg-small">0回复</span>
-                                            </span>
-                        </div>
-                    </div>
-                </section>
-                            </div>
-
-                                                <div class="lg-article">
-                        <h2>有什么新鲜事告诉大家</h2>
-                                                <div class="am-form-group am-form">
-                            <textarea rows="3" id="feed-content"></textarea>
-                        </div>
-                        <button class="am-btn am-btn-danger am-btn-sm" id="feed-submit">　发射犇犇！　</button>
-
-                    </div>
-                    <div class="lg-article">
-                        <ul class="am-nav am-nav-pills am-nav-justify" id="home-center-nav">
-                            <li class="feed-selector am-active" data-mode="watching"><a style="cursor: pointer">我关注的</a></li>
-                            <li class="feed-selector" data-mode="my"><a style="cursor: pointer">我发布的</a></li>
-                        </ul>
-                    </div>
-                    <ul class="am-comments-list am-comments-list-flip" id="feed"><li class="am-comment am-comment-primary feed-li">
-        <div class="lg-left"><a href="/user/399150" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/399150.png" class="am-comment-avatar">
-    </a></div>
-        <div class="am-comment-main">
-            <header class="am-comment-hd">
-                <div class="am-comment-meta">
-                    <span class="feed-username"><a class="lg-fg-red lg-bold" href="/user/399150" target="_blank">Zealous_YH</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a></span> 2022-02-11 11:32:47
-                                                                <a name="feed-reply" href="javascript: scrollToId('feed-content')" data-username="Zealous_YH">回复</a>
-                        <a name="feed-report" data-report-type="feed" data-report-id="4470271">举报</a>
-                                    </div>
-            </header>
-            <div class="am-comment-bd">
-                                    <span class="feed-comment"><p>@<a href="/user/-1">luogu</a></p></span>
-                
-                            </div>
-        </div>
-    </li>
-        
-    <li class="am-comment am-comment-primary feed-li">
-        <div class="lg-left"><a href="/user/359270" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/359270.png" class="am-comment-avatar">
-    </a></div>
-        <div class="am-comment-main">
-            <header class="am-comment-hd">
-                <div class="am-comment-meta">
-                    <span class="feed-username"><a class="lg-fg-green" href="/user/359270" target="_blank">是青白呀</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a></span> 2022-02-11 11:00:21
-                                                                <a name="feed-reply" href="javascript: scrollToId('feed-content')" data-username="是青白呀">回复</a>
-                        <a name="feed-report" data-report-type="feed" data-report-id="4470116">举报</a>
-                                    </div>
-            </header>
-            <div class="am-comment-bd">
-                                    <span class="feed-comment"><p>呜呜呜呜呜呜lrc不要我了|| @<a href="/user/409236">liangruichen</a> : 你们太菜了</p></span>
-                
-                            </div>
-        </div>
-    </li>
-        
-    <li class="am-comment am-comment-primary feed-li">
-        <div class="lg-left"><a href="/user/399150" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/399150.png" class="am-comment-avatar">
-    </a></div>
-        <div class="am-comment-main">
-            <header class="am-comment-hd">
-                <div class="am-comment-meta">
-                    <span class="feed-username"><a class="lg-fg-red lg-bold" href="/user/399150" target="_blank">Zealous_YH</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a></span> 2022-02-11 10:42:39
-                                                                <a name="feed-reply" href="javascript: scrollToId('feed-content')" data-username="Zealous_YH">回复</a>
-                        <a name="feed-report" data-report-type="feed" data-report-id="4470008">举报</a>
-                                    </div>
-            </header>
-            <div class="am-comment-bd">
-                                    <span class="feed-comment"><p>yep || @<a href="/user/579507">Cocaine_13fl</a> : 啊啊啊啊是不是lh || @<a href="/user/399150">Zealous_YH</a> : Not me. || @<a href="/user/579507">Cocaine_13fl</a> : 谁用lrc的号给我发的私信“我爱你”？？？？
-@<a href="/user/399150">Zealous_YH</a> @<a href="/user/347589">Frightened</a></p></span>
-                
-                            </div>
-        </div>
-    </li>
-        
-    <li class="am-comment am-comment-primary feed-li">
-        <div class="lg-left"><a href="/user/399150" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/399150.png" class="am-comment-avatar">
-    </a></div>
-        <div class="am-comment-main">
-            <header class="am-comment-hd">
-                <div class="am-comment-meta">
-                    <span class="feed-username"><a class="lg-fg-red lg-bold" href="/user/399150" target="_blank">Zealous_YH</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a></span> 2022-02-11 10:41:33
-                                                                <a name="feed-reply" href="javascript: scrollToId('feed-content')" data-username="Zealous_YH">回复</a>
-                        <a name="feed-report" data-report-type="feed" data-report-id="4470002">举报</a>
-                                    </div>
-            </header>
-            <div class="am-comment-bd">
-                                    <span class="feed-comment"><p>Not me. || @<a href="/user/579507">Cocaine_13fl</a> : 谁用lrc的号给我发的私信“我爱你”？？？？
-@<a href="/user/399150">Zealous_YH</a> @<a href="/user/347589">Frightened</a></p></span>
-                
-                            </div>
-        </div>
-    </li>
-        
-    <li class="am-comment am-comment-primary feed-li">
-        <div class="lg-left"><a href="/user/399150" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/399150.png" class="am-comment-avatar">
-    </a></div>
-        <div class="am-comment-main">
-            <header class="am-comment-hd">
-                <div class="am-comment-meta">
-                    <span class="feed-username"><a class="lg-fg-red lg-bold" href="/user/399150" target="_blank">Zealous_YH</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a></span> 2022-02-11 10:36:26
-                                                                <a name="feed-reply" href="javascript: scrollToId('feed-content')" data-username="Zealous_YH">回复</a>
-                        <a name="feed-report" data-report-type="feed" data-report-id="4469990">举报</a>
-                                    </div>
-            </header>
-            <div class="am-comment-bd">
-                                    <span class="feed-comment"><p>评测机卡了？</p></span>
-                
-                            </div>
-        </div>
-    </li>
-        
-    <li class="am-comment am-comment-primary feed-li">
-        <div class="lg-left"><a href="/user/399150" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/399150.png" class="am-comment-avatar">
-    </a></div>
-        <div class="am-comment-main">
-            <header class="am-comment-hd">
-                <div class="am-comment-meta">
-                    <span class="feed-username"><a class="lg-fg-red lg-bold" href="/user/399150" target="_blank">Zealous_YH</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a></span> 2022-02-11 10:30:47
-                                                                <a name="feed-reply" href="javascript: scrollToId('feed-content')" data-username="Zealous_YH">回复</a>
-                        <a name="feed-report" data-report-type="feed" data-report-id="4469962">举报</a>
-                                    </div>
-            </header>
-            <div class="am-comment-bd">
-                                    <span class="feed-comment"><p>Orz || @<a href="/user/254688">cool_milo</a> : iakioi!</p></span>
-                
-                            </div>
-        </div>
-    </li>
-        
-    <li class="am-comment am-comment-primary feed-li">
-        <div class="lg-left"><a href="/user/399150" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/399150.png" class="am-comment-avatar">
-    </a></div>
-        <div class="am-comment-main">
-            <header class="am-comment-hd">
-                <div class="am-comment-meta">
-                    <span class="feed-username"><a class="lg-fg-red lg-bold" href="/user/399150" target="_blank">Zealous_YH</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a></span> 2022-02-11 10:30:40
-                                                                <a name="feed-reply" href="javascript: scrollToId('feed-content')" data-username="Zealous_YH">回复</a>
-                        <a name="feed-report" data-report-type="feed" data-report-id="4469961">举报</a>
-                                    </div>
-            </header>
-            <div class="am-comment-bd">
-                                    <span class="feed-comment"><p>%%% || @<a href="/user/254688">cool_milo</a> : 为什么机房这么多菜鸟。。。完全不想和这群人待在一起，智商太低会传染。。。</p></span>
-                
-                            </div>
-        </div>
-    </li>
-        
-    <li class="am-comment am-comment-primary feed-li">
-        <div class="lg-left"><a href="/user/399150" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/399150.png" class="am-comment-avatar">
-    </a></div>
-        <div class="am-comment-main">
-            <header class="am-comment-hd">
-                <div class="am-comment-meta">
-                    <span class="feed-username"><a class="lg-fg-red lg-bold" href="/user/399150" target="_blank">Zealous_YH</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a></span> 2022-02-11 10:30:27
-                                                                <a name="feed-reply" href="javascript: scrollToId('feed-content')" data-username="Zealous_YH">回复</a>
-                        <a name="feed-report" data-report-type="feed" data-report-id="4469958">举报</a>
-                                    </div>
-            </header>
-            <div class="am-comment-bd">
-                                    <span class="feed-comment"><p>Orz || @<a href="/user/254688">cool_milo</a> : 2月14的acm我一个人一队打就行了吧...他们都太菜了啊，影响我体验又影响我体现自己的水平。</p></span>
-                
-                            </div>
-        </div>
-    </li>
-        
-    <li class="am-comment am-comment-primary feed-li">
-        <div class="lg-left"><a href="/user/399150" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/399150.png" class="am-comment-avatar">
-    </a></div>
-        <div class="am-comment-main">
-            <header class="am-comment-hd">
-                <div class="am-comment-meta">
-                    <span class="feed-username"><a class="lg-fg-red lg-bold" href="/user/399150" target="_blank">Zealous_YH</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a></span> 2022-02-11 10:17:13
-                                                                <a name="feed-reply" href="javascript: scrollToId('feed-content')" data-username="Zealous_YH">回复</a>
-                        <a name="feed-report" data-report-type="feed" data-report-id="4469890">举报</a>
-                                    </div>
-            </header>
-            <div class="am-comment-bd">
-                                    <span class="feed-comment"><p>LRC 机惨未遂</p></span>
-                
-                            </div>
-        </div>
-    </li>
-        
-    <li class="am-comment am-comment-primary feed-li">
-        <div class="lg-left"><a href="/user/399150" class="center">
-    <img src="https://cdn.luogu.com.cn/upload/usericon/399150.png" class="am-comment-avatar">
-    </a></div>
-        <div class="am-comment-main">
-            <header class="am-comment-hd">
-                <div class="am-comment-meta">
-                    <span class="feed-username"><a class="lg-fg-red lg-bold" href="/user/399150" target="_blank">Zealous_YH</a>&nbsp;<a class="sb_amazeui" target="_blank" href="/discuss/show/142324"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#5eb95e" style="margin-bottom: -3px;"><path d="M16 8C16 6.84375 15.25 5.84375 14.1875 5.4375C14.6562 4.4375 14.4688 3.1875 13.6562 2.34375C12.8125 1.53125 11.5625 1.34375 10.5625 1.8125C10.1562 0.75 9.15625 0 8 0C6.8125 0 5.8125 0.75 5.40625 1.8125C4.40625 1.34375 3.15625 1.53125 2.34375 2.34375C1.5 3.1875 1.3125 4.4375 1.78125 5.4375C0.71875 5.84375 0 6.84375 0 8C0 9.1875 0.71875 10.1875 1.78125 10.5938C1.3125 11.5938 1.5 12.8438 2.34375 13.6562C3.15625 14.5 4.40625 14.6875 5.40625 14.2188C5.8125 15.2812 6.8125 16 8 16C9.15625 16 10.1562 15.2812 10.5625 14.2188C11.5938 14.6875 12.8125 14.5 13.6562 13.6562C14.4688 12.8438 14.6562 11.5938 14.1875 10.5938C15.25 10.1875 16 9.1875 16 8ZM11.4688 6.625L7.375 10.6875C7.21875 10.8438 7 10.8125 6.875 10.6875L4.5 8.3125C4.375 8.1875 4.375 7.96875 4.5 7.8125L5.3125 7C5.46875 6.875 5.6875 6.875 5.8125 7.03125L7.125 8.34375L10.1562 5.34375C10.3125 5.1875 10.5312 5.1875 10.6562 5.34375L11.4688 6.15625C11.5938 6.28125 11.5938 6.5 11.4688 6.625Z"></path></svg></a></span> 2022-02-11 09:12:28
-                                                                <a name="feed-reply" href="javascript: scrollToId('feed-content')" data-username="Zealous_YH">回复</a>
-                        <a name="feed-report" data-report-type="feed" data-report-id="4469596">举报</a>
-                                    </div>
-            </header>
-            <div class="am-comment-bd">
-                                    <span class="feed-comment"><p>指路：@<a href="https://www.luogu.com.cn/user/413129">L<em>h</em></a> 的主页非常精彩</p></span>
-                
-                            </div>
-        </div>
-    </li>
-
-<style>
-    .feed-comment p {
-        margin-bottom: 0;
-    }
-</style>
-</ul>
-                    <div class="lg-article am-text-center" id="feed-more"><a>点击查看更多...</a></div>
-                                    </div>
-    </div>
-</div>
-
-<div class="am-modal am-modal-prompt" tabindex="-1" id="report">
-    <div class="am-modal-dialog">
-        <div class="am-modal-hd">反馈</div>
-        <div class="am-modal-bd">
-            如果你认为某条动态有问题，欢迎向洛谷反馈，以帮助更多的同学。
-            <br><br>
-            <select data-am-selected="{ btnStyle: 'secondary'}" name="reason" style="display: none;">
-                <option value="不友善内容">辱骂与不友善内容</option>
-                <option value="无意义内容">无法令人理解的无意义内容</option>
-                <option value="违法内容">违法内容与有害信息</option>
-                <option value="其他">其他原因（请解释）</option>
-            </select><div class="am-selected am-dropdown " id="am-selected-201zk" data-am-dropdown="">  <button type="button" class="am-selected-btn am-btn am-dropdown-toggle am-btn-secondary">    <span class="am-selected-status am-fl">辱骂与不友善内容</span>    <i class="am-selected-icon am-icon-caret-down"></i>  </button>  <div class="am-selected-content am-dropdown-content">    <h2 class="am-selected-header"><span class="am-icon-chevron-left">返回</span></h2>       <ul class="am-selected-list">                     <li class="am-checked" data-index="0" data-group="0" data-value="不友善内容">         <span class="am-selected-text">辱骂与不友善内容</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="1" data-group="0" data-value="无意义内容">         <span class="am-selected-text">无法令人理解的无意义内容</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="2" data-group="0" data-value="违法内容">         <span class="am-selected-text">违法内容与有害信息</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="3" data-group="0" data-value="其他">         <span class="am-selected-text">其他原因（请解释）</span>         <i class="am-icon-check"></i></li>            </ul>    <div class="am-selected-hint"></div>  </div></div><br><br>
-            请具体说明理由，以增加反馈的可信度。
-            <input type="text" class="am-modal-prompt-input" name="content">
-        </div>
-        <div class="am-modal-footer">
-            <span class="am-modal-btn" data-am-modal-cancel="">取消</span>
-            <span class="am-modal-btn" data-am-modal-confirm="">确定</span>
-        </div>
-    </div>
-</div>
-
-<script>
-    var feedPage = 1;
-    var feedMode = '';
-    var $feed = $("#feed");
-    function loadFeed() {
-        $.get("/feed/"+feedMode+"?page="+feedPage, function(resp) {
-            $feed.append(resp);
-            $("#feed-more").children("a").text("点击查看更多...")
-            $("[name=feed-delete]").click(function() {
-                $.post("/api/feed/delete/"+$(this).attr('data-feed-id'), function() {
-                    switchMode('watching');
-                })
-            })
-            $("[name=feed-reply]").click(function() {
-                var content = $(this).parents("li.feed-li").find(".feed-comment").text();
-                $("#feed-content").val(" || @" + $(this).attr('data-username') + " : " + content)
-            })
-            $("[name=feed-report]").click(function () {
-                var reportType = $(this).attr('data-report-type'), reportID = $(this).attr('data-report-id');
-                $('#report').modal({
-                    relatedTarget: this,
-                    onConfirm: function (e) {
-                        var reason = $('[name=reason]').val();
-                        var detail = $('[name=content]').val();
-
-                        $.post('/api/report/'+reportType, {
-                            relevantID: reportID,
-                            reason: reason + ' ' + detail
-                        }, function (data) {
-                            show_alert("提示", data.data);
-                        });
-                    }
-                });
-            });
-        });
-        feedPage++;
-    }
-
-    function switchMode(mode) {
-        feedMode = mode;
-        feedPage = 1;
-        $feed.html('');
-        $("#feed-more").show();
-        $(".feed-selector").removeClass("am-active");
-        $(".feed-selector[data-mode="+mode+"]").addClass("am-active");
-        loadFeed();
-    }
-
-    $(document).ready(function () {
-                    if($feed) switchMode('watching');
-        
-        $("#feed-more").click(function() {
-            $(this).children("a").text("加载中...");
-            loadFeed();
-        });
-        $(".feed-selector").click(function() {
-            var mode = $(this).attr('data-mode');
-            switchMode(mode);
-        });
-
-        $("#feed-submit").click(function () {
-            $(this).addClass("am-disabled");
-            var content = $('#feed-content').val(), e = this;
-            $.post("/api/feed/postBenben", {content: content}, function (resp) {
-                if(resp.status !== 200) {
-                    show_alert("好像哪里有点问题", resp.data);
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="KeyWords" content="Myh's Blog">
+    <meta name="description" content="Myh's Blog">
+    <title>Myh's Blog</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/upimages/favicon.ico">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta name="full-screen" content="yes">
+        <!-- SEO友好提示 -->
+    <meta name="applicable-device" content="pc,mobile">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/js/comm/html5shiv.js"></script>
+    <script type="text/javascript" src="/js/comm/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/comm/jquery.min.js"></script>
+    <script type="text/javascript" src="js/comm/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/comm/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/comm/ubox.js" charset="utf-8"></script><meta id="headScreen" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"></head><body style="width: auto;"><div style="display: none; z-index: 2147483640; top: 0px; left: 0px; position: fixed; height: 100%; width: 100%;"></div><div id="idBox" class="lightbox" style="display: none; z-index: 2147483647;">	<div id="boxMain">		<div id="boxTopTitle">			<span id="boxName">显示框</span>			<span id="boxClose" title="关闭" onclick="box.Close();">×</span>		</div>		<div id="boxContent">			<iframe id="showiframe" src="" style="width:100%;" name="bookConfirm" frameborder="0"></iframe>		</div>	</div></div>
+    <script type="text/javascript" src="js/comm/wow.js" charset="utf-8"></script>
+            <script>
+            var js_comm_alert_okButton = '确认',
+             js_comm_alert_cancelButton = '取消',
+             js_comm_alert_login = '登录',
+            js_comm_alert_goreturn = '返回',
+            js_comm_alert_msgTip = '温馨提示!';
+        </script>
+        <script type="text/javascript" src="js/comm/alert.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/089714.js?1644553324" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/comm/font/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/comm/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/comm/box.css">
+    <link rel="stylesheet" type="text/css" href="css/comm/alert.css">
+    <link rel="stylesheet" type="text/css" href="css/comm/comm.css?1644553324">
+    <link rel="stylesheet" type="text/css" href="css/089714.css?1644553324">
+    <script>
+        var batchArr = [];
+        var checkLoad = 0;//判断是否是回调完成的
+    </script>
+        <script>
+        var isOpenMobie = 2;
+        var isOpenPad = 2;
+        if (isOpenMobie == 1) {
+            if (isOpenPad == 1) {
+                $("body").css("width", "auto");
+            } else {
+                //是否手机端判断
+                var ua = navigator.userAgent;
+                var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+                    isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+                    isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+                    isMobile = isIphone || isAndroid;
+                if (isMobile) {
+                    $("body").css("width", "1280px");
                 } else {
-                    $(e).removeClass("am-disabled");
-                    $("#feed-content").val('');
-                    switchMode('watching');
+                    $("body").css("width", "auto");
                 }
-            });
-        });
-    });
-
-
-    $("[name=punch]").click(function () {
-        $(this).addClass("am-disabled");
-        $(this).html("<i class='am-icon-spinner am-icon-pulse'></i>求签中");
-        verify = $("[name=verify]").val();
-        $.post("/index/ajax_punch", {verify:verify}, function (data) {
-            var res;
-            res = eval("(" + data + ")");
-            if (res["code"] != 200) {
-                show_alert("好像哪里有点问题", res["message"]);
-                $("[name=punch]").text('点击打卡').removeClass("am-disabled")
             }
-            else {
-                $('.lg-punch').html(res["more"]["html"]);
-            }
+        } else {
+            $("body").css("width", "auto");
+            $("head").append("<meta id='headScreen' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport' />");
+        }
+        //手机屏幕尺寸兼容 purewinter 2019-03-26
+        $(window).load(function () {
+            bodyScale();
         });
-    });
-    $("[name=toproblem]").keyup(function (event) {
-        if (event.keyCode === 13) {
-			if($(this).val() === '') return;
-            var pid = $(this).val()
-            if(!isNaN(pid)) pid = 'P'+pid
-            goto_url('/problemnew/show/' + pid)
+        function bodyScale() {
+            var windowWidth = $(window).width();
+            $("#bodyScale").remove();
+            if (windowWidth < 680) {
+                var scale = windowWidth / 375;
+                $("#headScreen").remove();
+                $("head").append("<meta id='headScreen' content='width=375, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no' name='viewport' />");
+            } else if (windowWidth < 960) {
+                var scale = windowWidth / 960;
+                $("#headScreen").remove();
+                $("head").append("<meta id='headScreen' content='width=960, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no' name='viewport' />");
+            }
         }
-    })
-    $("[name=gotorandom]").click(function () {
-        goto_url('/problemnew/show/P' + (parseInt(Math.random(0, 1) * 4486) + 1000));
-    });
-    $("[name=goto]").click(function () {
-        if($('[name=toproblem]').val()==='') {
-            show_alert("提示", "请输入题号");
-            return;
-        }
-        var pid = $('[name=toproblem]').val()
-        if(!isNaN(pid)) pid = 'P'+pid
-        goto_url('/problemnew/show/' + pid)
-    });
-</script>
-</div></main> <div data-v-7958fe72="" data-v-90bffe18="" class="wrapper wrapped lfe-body"><div data-v-7958fe72="" class="background" style="background: rgba(0, 0, 0, 0) linear-gradient(270deg, rgba(111, 214, 221, 0.867), rgba(225, 149, 216, 0.867)) repeat scroll 0% 0%; filter: blur(3px) brightness(110%);"></div> <div data-v-009d73c6="" data-v-90bffe18="" class="footer" data-v-7958fe72=""><img data-v-009d73c6="" src="https://cdn.luogu.com.cn/fe/logo-single.png?0a231b572e3eb12887faedad7d00e829" class="logo-img"> <div data-v-009d73c6="" class="slogan">
-    在洛谷，<br data-v-009d73c6="">
-    享受 Coding 的欢乐
-  </div> <img data-v-009d73c6="" src="https://cdn.luogu.com.cn/fe/wechat_qr.png?b14b3f14422842b842e982efe6c41eb9" class="qr-img"> <div data-v-009d73c6="" class="info"><p data-v-009d73c6=""><a data-v-303bbf52="" data-v-009d73c6="" href="/blog/luogu/about-luogu" colorscheme="default" class="color-default">
-        关于洛谷
-      </a> |
-      <a data-v-303bbf52="" data-v-009d73c6="" href="/blog/luogu/luogu-help" colorscheme="default" class="color-default">
-        帮助中心
-      </a> |
-      <a data-v-303bbf52="" data-v-009d73c6="" href="/blog/luogu/luogu-EULA" colorscheme="default" class="color-default">
-        用户协议
-      </a> |
-      <a data-v-303bbf52="" data-v-009d73c6="" href="/blog/luogu/contact-us" colorscheme="default" class="color-default">
-        联系我们
-      </a> <br data-v-009d73c6=""> <a data-v-303bbf52="" data-v-009d73c6="" href="/discuss/lists?forumname=miaomiaowu" colorscheme="default" class="color-default">
-        小黑屋
-      </a> |
-      <a data-v-303bbf52="" data-v-009d73c6="" href="/judgement" colorscheme="default" class="color-default">
-        陶片放逐
-      </a> |
-      <a data-v-303bbf52="" data-v-009d73c6="" href="/blog/luogu/social-rules" colorscheme="default" class="color-default">
-        社区规则
-      </a> |
-      <a data-v-303bbf52="" data-v-009d73c6="" href="https://www.lagou.com/gongsi/369082.html" target="_blank" colorscheme="default" class="color-default">
-        招贤纳才
-      </a> <br data-v-009d73c6="">
-
-      Developed by the
-      <a data-v-303bbf52="" data-v-009d73c6="" href="https://github.com/luogu-dev" target="_blank" colorscheme="default" class="color-default">
-        Luogu Dev Team
-      </a> <br data-v-009d73c6="">
-      2013-2022 , © 洛谷
-      <br data-v-009d73c6="">
-
-      增值电信业务经营许可证 沪B2-20200477
-      <br data-v-009d73c6=""> <a data-v-303bbf52="" data-v-009d73c6="" href="http://beian.miit.gov.cn" target="_blank" colorscheme="default" class="color-default">
-        沪ICP备18008322号
-      </a>
-      All rights reserved.
-      </p></div></div></div></div></div>
-<script>
-    function scrollToId (id) {
-        $('html, body').animate({
-            scrollTop: ($('#' + id).offset().top)
-        }, 500);
-    }
-</script>
-<style>
-    .lg-toolbar {
-        display: none;
-    }
-
-    #app-old{
-        display: block;
-        margin-bottom: 2em;
-        /* position: relative;*/
-        box-sizing: border-box;
-        max-width: 100%;
-    }
-
-    code {
-        font-family: monospace, "Courier New";
-    }
-
-</style>
+        $(window).load(function () {
+            if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+                setTimeout(function () {
+                    new WOW().init()
+                }, 150)
+            }
+            ;
+        });
+        var DIY_WEBSITE_ID = "24447";
+        var DIY_JS_SERVER = "trial-admin.nb.tencentsite.com";
+    </script>
+            <script src="https://trial-admin.nb.tencentsite.com/exusers/login_html_v9_diy.php?idweb=24447&amp;langid=0&amp;UPermission=all"></script>
+            <script src="https://trial-admin.nb.tencentsite.com/js/backscript.js"></script>
 
 
-<div class="am-modal am-modal-alert" tabindex="-1" id="lg-alert">
-    <div class="am-modal-dialog">
-        <div class="am-modal-hd" id="lg-alert-title"></div>
-        <div class="am-modal-bd" id="lg-alert-message"></div>
-        <div class="am-modal-footer">
-            <span class="am-modal-btn">确定</span>
-        </div>
-    </div>
+<!--这里专门处理百度分享文章显示缩略图不正确的问题，因为百度分享读取的是第一张图片，缩略图尽量在400x400,但是至好宽高都要大于400，前提是具有微信分享功能，图片地址通过jq传入 $(".baiduImg").attr("src",shareImg);-->
+<div class="baiduImgSet" style="display: none;">
+    <img class="baiduImg" src="">
+</div>
+    <script type="text/javascript">var Default_isFT = 0;</script>
+<script type="text/javascript" src="js/comm/transform.js?201603091"></script>
+            <div id="comm_layout_header" class="layout " data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
+                <div class="view_contents">
+                                <div id="text_style_01_1644498814361" class="view style_01 text  none lockHeightView" data-wow-duration="1s" data-wow-delay="0.25s" data-wow-offset="0" data-wow-iteration="1">
+                <div names="text" class="view_contents">
+                    Myh's Blog<br>                </div>
+            </div>
+                        <div id="div_blank_new05_1644552876799" class="view blank_new05 div  lockHeightView" data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
+                <div names="div" class="view_contents">
+                    <div class="blank_new05 blank_area">
+  <div class="roundcs modSet">
+  </div>
+</div>
+                </div>
+            </div>
+                        <div id="clock_style_1_1644553161264" class="view style_1 clock  none lockHeightView" data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
+                <div names="clock" class="view_contents"><style>.clock span{font-size:14px}
+</style><script>$(document).ready(function(){
+});</script><div class="clock" data-timezone="Etc/GMT-8" data-with_leading_zeros="1" data-hour_format="24" data-template="default" <p="">
+            <span class="year">2022</span>年<span class="month">02</span>月<span class="date">11</span>日
+            <span class="week-name">星期五</span>
+            <span class="hours">12</span>时<span class="minutes">23</span>分<span class="seconds">02</span>秒
+        <p></p>
+    
 </div>
 
-<script src="/js/ace/ace.js"></script>
+<script type="application/javascript">
+    $(function () {
+        start_clock_clock_style_1_1644553161264();
+    });
+    function start_clock_clock_style_1_1644553161264() {
+        setTimeout(update_clock_clock_style_1_1644553161264, 1000);
+    }
+    function update_clock_clock_style_1_1644553161264() {
+        var clock = $('#clock_style_1_1644553161264 .clock'),
+                options = {
+                    'timezone':clock.attr('data-timezone'),
+                    'with_leading_zeros':clock.attr('data-with_leading_zeros'),
+                    'hour_format':clock.attr('data-hour_format'),
+                    'template':clock.attr('data-template')
+                },
+                time = get_time_info(options);
+        clock.find('.year').html(time['year']);
+        clock.find('.month').html(time['month']);
+        clock.find('.date').html(time['date']);
+        clock.find('.hours').html(time['hours']);
+        clock.find('.minutes').html(time['minutes']);
+        clock.find('.seconds').html(time['seconds']);
+        clock.find('.am-pm').html(time['am-pm']);
+        clock.find('.year').html(time['year']);
+        setTimeout(update_clock_clock_style_1_1644553161264, 1000);
+    }
+    function get_time_info(options) {
+        var date = get_time_in_zone(options.timezone), result;
+        result = {
+            'year' : date.getFullYear(),
+            'month' : _val(date.getMonth() + 1, options.with_leading_zeros),
+            'date' : _val(date.getDate(), options.with_leading_zeros),
+            'hours' : _val(options.hour_format == 12 && date.getHours() > 12 ? date.getHours() % 12 : date.getHours(), options.with_leading_zeros),
+            'minutes' : _val(date.getMinutes(), true),
+            'seconds' : _val(date.getSeconds(), true),
+            'am-pm' : date.getHours() < 12 ? 'AM' : 'PM',
+            'week-index' : date.getDay()
+        };
 
-<script src="https://cdn.luogu.com.cn/js/vendor.js" data-manual=""></script>
-<script src="https://cdn.luogu.com.cn/js/jsmind.js" data-manual=""></script>
-<!--
-<script src="https://cdn.luogu.com.cn/js/ajaxfileupload.js" data-manual></script>
-<script src="https://cdn.luogu.com.cn/js/jquery.pjax.js" data-manual></script>
--->
+        var weeks, months, am_pm;
+        switch(options.template) {
+            case 'english':
+                weeks = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+                result['month'] = months[result['month'] - 1];
+                break;
+            case 'default': default:
+                weeks = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+                am_pm = ['上午', '下午'];
+                result['am-pm'] = result['am-pm'] == 'am' || result['am-pm'] == 'AM' ? am_pm[0] : am_pm[1];
+            break;
+        }
+        result['week-name'] = weeks ? weeks[result['week-index']] : '';
+        return result;
+    }
+    function get_timezone_offset(timezone) {
+        var timezone_list = {
+            'Etc/GMT+5': -5,
+            'UTC': 0,
+            'GMT+0': 0,
+            'Etc/GMT-8': 8,
+            'PRC': 8,
+            'Etc/GMT-9': 9
+        };
+        return timezone_list[timezone] !== undefined ? timezone_list[timezone] : 0;
+    }
+    function get_utc_time() {
+        var date = new Date(), local = date.getTime(), offset = date.getTimezoneOffset() * 60000;
+        return local + offset;
+    }
+    function get_time_in_zone(timezone) {
+        return new Date(get_utc_time() + 3600000 * get_timezone_offset(timezone));
+    }
+    function _val(val, with_leading_zeros) {
+        return '' + (val < 10 && with_leading_zeros ? '0' : '') + val;
+    }
+</script>
+<!-- 风格6倒计时 -->
+    <script type="text/javascript">
+        var timeclock_style_1_1644553161264 = "2022-02-11 23:59:59";
+        var endDayclock_style_1_1644553161264 = new Date(Date.parse(timeclock_style_1_1644553161264));
+        
+        // var weekNum = endDayclock_style_1_1644553161264.getDay();  //返回0-6  0对应的是周日  
+        var starttimeclock_style_1_1644553161264 = timeclock_style_1_1644553161264.replace(new RegExp("-","gm"),"/");
 
-<!--ajaxfileupload.js highlight.pack.js jquery.pjax.js markDownEditor.js poshytip.js qrcode.min.js-->
+        var dayArrclock_style_1_1644553161264 = new Array(),hourArrclock_style_1_1644553161264 = new Array(),minuteArrclock_style_1_1644553161264 = new Array(),secondArrclock_style_1_1644553161264 = new Array();
 
-<script src="https://cdn.luogu.com.cn/js/amazeui.min.js"></script>
-<script src="https://cdn.luogu.com.cn/js/highcharts.js"></script>
-<script src="https://cdn.luogu.com.cn/js/highcharts-more.js"></script>
-<script src="/static/katex/katex.min.js"></script>
-<script src="/static/katex/contrib/auto-render.min.js"></script>
-<script src="https://cdn.luogu.com.cn/markdown-palettes/markdown-palettes.min.js?ver=20190219"></script>
-<script src="https://cdn.luogu.com.cn/js/luogu3.js?ver=20190724"></script>
+        function getTimeFunc_clock_style_1_1644553161264() {
+            var endTimeclock_style_1_1644553161264 = (new Date(starttimeclock_style_1_1644553161264)).getTime();
+            var nowTimeclock_style_1_1644553161264 = new Date();
+            
+            nowTimeclock_style_1_1644553161264 = nowTimeclock_style_1_1644553161264.getTime();
+            var centerTimeclock_style_1_1644553161264 = endTimeclock_style_1_1644553161264 - nowTimeclock_style_1_1644553161264;
 
-<!--script src="//www.recaptcha.net/recaptcha/api.js?hl=zh-CN&render=explicit&onload=renderCaptcha" async defer></script-->
+            let daysclock_style_1_1644553161264 = Math.floor(centerTimeclock_style_1_1644553161264 / (1000 * 60 * 60 * 24));
+        　　let hoursclock_style_1_1644553161264 = Math.floor((centerTimeclock_style_1_1644553161264 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        　　let minutesclock_style_1_1644553161264 = Math.floor((centerTimeclock_style_1_1644553161264 % (1000 * 60 * 60)) / (1000 * 60));
+        　　let secondsclock_style_1_1644553161264 = Math.floor(centerTimeclock_style_1_1644553161264 % (1000 * 60) / 1000);
+
+                        var timerclock_style_1_1644553161264 = '';
+            
+
+            if( centerTimeclock_style_1_1644553161264 <= 0 && timerclock_style_1_1644553161264) {
+                clearInterval(timerclock_style_1_1644553161264);
+                daysclock_style_1_1644553161264 = hoursclock_style_1_1644553161264 = minutesclock_style_1_1644553161264 = secondsclock_style_1_1644553161264 = 0;
+            }
+
+                            if( centerTimeclock_style_1_1644553161264 <= 0) {
+                    daysclock_style_1_1644553161264 = hoursclock_style_1_1644553161264 = minutesclock_style_1_1644553161264 = secondsclock_style_1_1644553161264 = 0;
+                }
+            
+            // 风格6渲染
+            
+            // 风格7渲染
+            var html_days = '',html_hours = '',html_minutes = '',html_seconds = '';
+                    }
+        getTimeFunc_clock_style_1_1644553161264();
+                    var timerclock_style_1_1644553161264 = setInterval(getTimeFunc_clock_style_1_1644553161264,1000);
+            </script>
+</div>
+            </div>
+                        <div id="counter_style_2_1644553276947" class="view style_2 counter  lockHeightView" data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
+                <div names="counter" class="view_contents"><style>.counter:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.counter{zoom:1}
+.counter .item{float:left; font-size:16px; line-height:2em; font-family:"Helvetica Neue","Helvetica",arial,sans-serif; font-weight:bold}
+
+.counter.style_2 .item {
+    margin-right:.1em;
+}
+.counter.style_2 .digit{
+    padding:0 .15em;
+    color:#333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+}
+.counter.style_2 .digit span {
+    display: inline-block;
+    -webkit-transform: scale(1.5,1.5); -moz-transform: scale(1.5,1.5); -o-transform: scale(1.5,1.5); transform: scale(1.5,1.5);
+}
+.counter.style_2 .dot {
+    -webkit-transform: translate(0, 2px); -moz-transform: translate(0, 2px); -o-transform: translate(0, 2px); transform: translate(0, 2px);
+}
+</style><script></script><div class="counter style_2 hide-line digit-animation">
+
+    <span class="item digit digit-0"><span>0</span></span>
+
+    <span class="item digit digit-0"><span>0</span></span>
+
+    <span class="item digit digit-0"><span>0</span></span>
+
+    <span class="item digit digit-0"><span>0</span></span>
+
+    <span class="item digit digit-0"><span>0</span></span>
+
+    <span class="item digit digit-0"><span>0</span></span>
+
+    <span class="item digit digit-2"><span>2</span></span>
+
+    <span class="item digit digit-6"><span>6</span></span>
+
+</div>
+<style>
+            </style>
+</div>
+            </div>
+                            </div>
+            </div>
+                        <div id="layout_1644498772812" class="layout " data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
+                <div class="view_contents">
+                                    </div>
+            </div>
+                        <div id="button_style_12_1644552946840" class="view style_12 button  ev_c_scrollTop lockHeightView" data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
+                <div names="button" class="view_contents">
+                    <script>function btnTop(){$("html,body").animate({scrollTop:"0px"},1000);}function btnBottom(){var bodyH = $("html,body").height();$("html,body").animate({scrollTop:bodyH},1000);}</script><button type="button" class="button_default12  btnaSet">
+	<img class="buttonImg link-type-{linkType}" src="img/button/style_12/contentImg.png" title="" alt="{imgalt}">
+</button>
+<script type="text/javascript">
+    if(typeof showcart !== 'function'){
+        function showcart(){
+            var langid = 0;
+            if (langid==0 && BodyIsFt) langid = 1;
+            if(window.screen.width<767 || ($('body').width() > 0 && $('body').width() < 767)){
+                location.href = "https://trial-admin.nb.tencentsite.com/exusers/u_cart.php?idweb=24447&act=show&lang="+langid+"&ismobile=1";
+            }else{
+                document.getElementById("boxName").innerHTML="";
+                if(document.getElementById("boxClose")) document.getElementById("boxClose").innerHTML="×";
+                document.getElementById("showiframe").src="https://trial-admin.nb.tencentsite.com/exusers/u_cart.php?idweb=24447&act=show&lang="+langid+"&v=9";
+                box.Show({width:'1000px', height:'600px'});
+            }
+        }
+    }
+</script>                </div>
+            </div>
+                        <div id="comm_layout_footer" class="layout " data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
+                <div class="view_contents">
+                                    </div>
+            </div>
+            <script>
+    $(function () {
+        sendBatch(batchArr);
+    });
+</script>
+<script type="text/javascript" src="https://trial-admin.nb.tencentsite.com/webapp/UserPanel/share/js.js" charset="utf-8"></script>
 
 
-<script src="https://s23.cnzz.com/z_stat.php?id=5476811&amp;web_id=5476811"></script></body></html>
+</body></html>
