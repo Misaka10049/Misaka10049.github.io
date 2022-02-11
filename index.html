@@ -1,337 +1,77 @@
-<html><head>
-    <!-- 启用极速模式(webkit) -->
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="KeyWords" content="Myh's Blog">
-    <meta name="description" content="Myh's Blog">
-    <title>Myh's Blog</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/upimages/favicon.ico">
-            <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-touch-fullscreen" content="yes">
-        <meta name="full-screen" content="yes">
-        <!-- SEO友好提示 -->
-    <meta name="applicable-device" content="pc,mobile">
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="/js/comm/html5shiv.js"></script>
-    <script type="text/javascript" src="/js/comm/respond.min.js"></script>
-    <![endif]-->
-    <script type="text/javascript" src="js/comm/jquery.min.js"></script>
-    <script type="text/javascript" src="js/comm/jquery.lazyload.min.js"></script>
-    <script type="text/javascript" src="js/comm/jquery.nicescroll.min.js"></script>
-    <script type="text/javascript" src="js/comm/ubox.js" charset="utf-8"></script><meta id="headScreen" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"></head><body style="width: auto;"><div style="display: none; z-index: 2147483640; top: 0px; left: 0px; position: fixed; height: 100%; width: 100%;"></div><div id="idBox" class="lightbox" style="display: none; z-index: 2147483647;">	<div id="boxMain">		<div id="boxTopTitle">			<span id="boxName">显示框</span>			<span id="boxClose" title="关闭" onclick="box.Close();">×</span>		</div>		<div id="boxContent">			<iframe id="showiframe" src="" style="width:100%;" name="bookConfirm" frameborder="0"></iframe>		</div>	</div></div>
-    <script type="text/javascript" src="js/comm/wow.js" charset="utf-8"></script>
-            <script>
-            var js_comm_alert_okButton = '确认',
-             js_comm_alert_cancelButton = '取消',
-             js_comm_alert_login = '登录',
-            js_comm_alert_goreturn = '返回',
-            js_comm_alert_msgTip = '温馨提示!';
-        </script>
-        <script type="text/javascript" src="js/comm/alert.js" charset="utf-8"></script>
-        <script type="text/javascript" src="js/089714.js?1644553324" charset="utf-8"></script>
-    <link rel="stylesheet" type="text/css" href="css/comm/font/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/comm/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="css/comm/box.css">
-    <link rel="stylesheet" type="text/css" href="css/comm/alert.css">
-    <link rel="stylesheet" type="text/css" href="css/comm/comm.css?1644553324">
-    <link rel="stylesheet" type="text/css" href="css/089714.css?1644553324">
-    <script>
-        var batchArr = [];
-        var checkLoad = 0;//判断是否是回调完成的
-    </script>
-        <script>
-        var isOpenMobie = 2;
-        var isOpenPad = 2;
-        if (isOpenMobie == 1) {
-            if (isOpenPad == 1) {
-                $("body").css("width", "auto");
-            } else {
-                //是否手机端判断
-                var ua = navigator.userAgent;
-                var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
-                    isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
-                    isAndroid = ua.match(/(Android)\s+([\d.]+)/),
-                    isMobile = isIphone || isAndroid;
-                if (isMobile) {
-                    $("body").css("width", "1280px");
-                } else {
-                    $("body").css("width", "auto");
-                }
-            }
-        } else {
-            $("body").css("width", "auto");
-            $("head").append("<meta id='headScreen' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport' />");
-        }
-        //手机屏幕尺寸兼容 purewinter 2019-03-26
-        $(window).load(function () {
-            bodyScale();
-        });
-        function bodyScale() {
-            var windowWidth = $(window).width();
-            $("#bodyScale").remove();
-            if (windowWidth < 680) {
-                var scale = windowWidth / 375;
-                $("#headScreen").remove();
-                $("head").append("<meta id='headScreen' content='width=375, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no' name='viewport' />");
-            } else if (windowWidth < 960) {
-                var scale = windowWidth / 960;
-                $("#headScreen").remove();
-                $("head").append("<meta id='headScreen' content='width=960, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no' name='viewport' />");
-            }
-        }
-        $(window).load(function () {
-            if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
-                setTimeout(function () {
-                    new WOW().init()
-                }, 150)
-            }
-            ;
-        });
-        var DIY_WEBSITE_ID = "24447";
-        var DIY_JS_SERVER = "trial-admin.nb.tencentsite.com";
-    </script>
-            <script src="https://trial-admin.nb.tencentsite.com/exusers/login_html_v9_diy.php?idweb=24447&amp;langid=0&amp;UPermission=all"></script>
-            <script src="https://trial-admin.nb.tencentsite.com/js/backscript.js"></script>
-
-
-<!--这里专门处理百度分享文章显示缩略图不正确的问题，因为百度分享读取的是第一张图片，缩略图尽量在400x400,但是至好宽高都要大于400，前提是具有微信分享功能，图片地址通过jq传入 $(".baiduImg").attr("src",shareImg);-->
-<div class="baiduImgSet" style="display: none;">
-    <img class="baiduImg" src="">
-</div>
-    <script type="text/javascript">var Default_isFT = 0;</script>
-<script type="text/javascript" src="js/comm/transform.js?201603091"></script>
-            <div id="comm_layout_header" class="layout " data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
-                <div class="view_contents">
-                                <div id="text_style_01_1644498814361" class="view style_01 text  none lockHeightView" data-wow-duration="1s" data-wow-delay="0.25s" data-wow-offset="0" data-wow-iteration="1">
-                <div names="text" class="view_contents">
-                    Myh's Blog<br>                </div>
-            </div>
-                        <div id="div_blank_new05_1644552876799" class="view blank_new05 div  lockHeightView" data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
-                <div names="div" class="view_contents">
-                    <div class="blank_new05 blank_area">
-  <div class="roundcs modSet">
-  </div>
-</div>
-                </div>
-            </div>
-                        <div id="clock_style_1_1644553161264" class="view style_1 clock  none lockHeightView" data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
-                <div names="clock" class="view_contents"><style>.clock span{font-size:14px}
-</style><script>$(document).ready(function(){
-});</script><div class="clock" data-timezone="Etc/GMT-8" data-with_leading_zeros="1" data-hour_format="24" data-template="default" <p="">
-            <span class="year">2022</span>年<span class="month">02</span>月<span class="date">11</span>日
-            <span class="week-name">星期五</span>
-            <span class="hours">12</span>时<span class="minutes">23</span>分<span class="seconds">02</span>秒
-        <p></p>
-    
-</div>
-
-<script type="application/javascript">
-    $(function () {
-        start_clock_clock_style_1_1644553161264();
-    });
-    function start_clock_clock_style_1_1644553161264() {
-        setTimeout(update_clock_clock_style_1_1644553161264, 1000);
-    }
-    function update_clock_clock_style_1_1644553161264() {
-        var clock = $('#clock_style_1_1644553161264 .clock'),
-                options = {
-                    'timezone':clock.attr('data-timezone'),
-                    'with_leading_zeros':clock.attr('data-with_leading_zeros'),
-                    'hour_format':clock.attr('data-hour_format'),
-                    'template':clock.attr('data-template')
-                },
-                time = get_time_info(options);
-        clock.find('.year').html(time['year']);
-        clock.find('.month').html(time['month']);
-        clock.find('.date').html(time['date']);
-        clock.find('.hours').html(time['hours']);
-        clock.find('.minutes').html(time['minutes']);
-        clock.find('.seconds').html(time['seconds']);
-        clock.find('.am-pm').html(time['am-pm']);
-        clock.find('.year').html(time['year']);
-        setTimeout(update_clock_clock_style_1_1644553161264, 1000);
-    }
-    function get_time_info(options) {
-        var date = get_time_in_zone(options.timezone), result;
-        result = {
-            'year' : date.getFullYear(),
-            'month' : _val(date.getMonth() + 1, options.with_leading_zeros),
-            'date' : _val(date.getDate(), options.with_leading_zeros),
-            'hours' : _val(options.hour_format == 12 && date.getHours() > 12 ? date.getHours() % 12 : date.getHours(), options.with_leading_zeros),
-            'minutes' : _val(date.getMinutes(), true),
-            'seconds' : _val(date.getSeconds(), true),
-            'am-pm' : date.getHours() < 12 ? 'AM' : 'PM',
-            'week-index' : date.getDay()
-        };
-
-        var weeks, months, am_pm;
-        switch(options.template) {
-            case 'english':
-                weeks = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-                months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-                result['month'] = months[result['month'] - 1];
-                break;
-            case 'default': default:
-                weeks = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
-                am_pm = ['上午', '下午'];
-                result['am-pm'] = result['am-pm'] == 'am' || result['am-pm'] == 'AM' ? am_pm[0] : am_pm[1];
-            break;
-        }
-        result['week-name'] = weeks ? weeks[result['week-index']] : '';
-        return result;
-    }
-    function get_timezone_offset(timezone) {
-        var timezone_list = {
-            'Etc/GMT+5': -5,
-            'UTC': 0,
-            'GMT+0': 0,
-            'Etc/GMT-8': 8,
-            'PRC': 8,
-            'Etc/GMT-9': 9
-        };
-        return timezone_list[timezone] !== undefined ? timezone_list[timezone] : 0;
-    }
-    function get_utc_time() {
-        var date = new Date(), local = date.getTime(), offset = date.getTimezoneOffset() * 60000;
-        return local + offset;
-    }
-    function get_time_in_zone(timezone) {
-        return new Date(get_utc_time() + 3600000 * get_timezone_offset(timezone));
-    }
-    function _val(val, with_leading_zeros) {
-        return '' + (val < 10 && with_leading_zeros ? '0' : '') + val;
-    }
-</script>
-<!-- 风格6倒计时 -->
-    <script type="text/javascript">
-        var timeclock_style_1_1644553161264 = "2022-02-11 23:59:59";
-        var endDayclock_style_1_1644553161264 = new Date(Date.parse(timeclock_style_1_1644553161264));
-        
-        // var weekNum = endDayclock_style_1_1644553161264.getDay();  //返回0-6  0对应的是周日  
-        var starttimeclock_style_1_1644553161264 = timeclock_style_1_1644553161264.replace(new RegExp("-","gm"),"/");
-
-        var dayArrclock_style_1_1644553161264 = new Array(),hourArrclock_style_1_1644553161264 = new Array(),minuteArrclock_style_1_1644553161264 = new Array(),secondArrclock_style_1_1644553161264 = new Array();
-
-        function getTimeFunc_clock_style_1_1644553161264() {
-            var endTimeclock_style_1_1644553161264 = (new Date(starttimeclock_style_1_1644553161264)).getTime();
-            var nowTimeclock_style_1_1644553161264 = new Date();
-            
-            nowTimeclock_style_1_1644553161264 = nowTimeclock_style_1_1644553161264.getTime();
-            var centerTimeclock_style_1_1644553161264 = endTimeclock_style_1_1644553161264 - nowTimeclock_style_1_1644553161264;
-
-            let daysclock_style_1_1644553161264 = Math.floor(centerTimeclock_style_1_1644553161264 / (1000 * 60 * 60 * 24));
-        　　let hoursclock_style_1_1644553161264 = Math.floor((centerTimeclock_style_1_1644553161264 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        　　let minutesclock_style_1_1644553161264 = Math.floor((centerTimeclock_style_1_1644553161264 % (1000 * 60 * 60)) / (1000 * 60));
-        　　let secondsclock_style_1_1644553161264 = Math.floor(centerTimeclock_style_1_1644553161264 % (1000 * 60) / 1000);
-
-                        var timerclock_style_1_1644553161264 = '';
-            
-
-            if( centerTimeclock_style_1_1644553161264 <= 0 && timerclock_style_1_1644553161264) {
-                clearInterval(timerclock_style_1_1644553161264);
-                daysclock_style_1_1644553161264 = hoursclock_style_1_1644553161264 = minutesclock_style_1_1644553161264 = secondsclock_style_1_1644553161264 = 0;
-            }
-
-                            if( centerTimeclock_style_1_1644553161264 <= 0) {
-                    daysclock_style_1_1644553161264 = hoursclock_style_1_1644553161264 = minutesclock_style_1_1644553161264 = secondsclock_style_1_1644553161264 = 0;
-                }
-            
-            // 风格6渲染
-            
-            // 风格7渲染
-            var html_days = '',html_hours = '',html_minutes = '',html_seconds = '';
-                    }
-        getTimeFunc_clock_style_1_1644553161264();
-                    var timerclock_style_1_1644553161264 = setInterval(getTimeFunc_clock_style_1_1644553161264,1000);
-            </script>
-</div>
-            </div>
-                        <div id="counter_style_2_1644553276947" class="view style_2 counter  lockHeightView" data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
-                <div names="counter" class="view_contents"><style>.counter:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
-.counter{zoom:1}
-.counter .item{float:left; font-size:16px; line-height:2em; font-family:"Helvetica Neue","Helvetica",arial,sans-serif; font-weight:bold}
-
-.counter.style_2 .item {
-    margin-right:.1em;
-}
-.counter.style_2 .digit{
-    padding:0 .15em;
-    color:#333;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius:5px;
-}
-.counter.style_2 .digit span {
-    display: inline-block;
-    -webkit-transform: scale(1.5,1.5); -moz-transform: scale(1.5,1.5); -o-transform: scale(1.5,1.5); transform: scale(1.5,1.5);
-}
-.counter.style_2 .dot {
-    -webkit-transform: translate(0, 2px); -moz-transform: translate(0, 2px); -o-transform: translate(0, 2px); transform: translate(0, 2px);
-}
-</style><script></script><div class="counter style_2 hide-line digit-animation">
-
-    <span class="item digit digit-0"><span>0</span></span>
-
-    <span class="item digit digit-0"><span>0</span></span>
-
-    <span class="item digit digit-0"><span>0</span></span>
-
-    <span class="item digit digit-0"><span>0</span></span>
-
-    <span class="item digit digit-0"><span>0</span></span>
-
-    <span class="item digit digit-0"><span>0</span></span>
-
-    <span class="item digit digit-2"><span>2</span></span>
-
-    <span class="item digit digit-6"><span>6</span></span>
-
-</div>
-<style>
-            </style>
-</div>
-            </div>
-                            </div>
-            </div>
-                        <div id="layout_1644498772812" class="layout " data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
-                <div class="view_contents">
-                                    </div>
-            </div>
-                        <div id="button_style_12_1644552946840" class="view style_12 button  ev_c_scrollTop lockHeightView" data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
-                <div names="button" class="view_contents">
-                    <script>function btnTop(){$("html,body").animate({scrollTop:"0px"},1000);}function btnBottom(){var bodyH = $("html,body").height();$("html,body").animate({scrollTop:bodyH},1000);}</script><button type="button" class="button_default12  btnaSet">
-	<img class="buttonImg link-type-{linkType}" src="img/button/style_12/contentImg.png" title="" alt="{imgalt}">
-</button>
-<script type="text/javascript">
-    if(typeof showcart !== 'function'){
-        function showcart(){
-            var langid = 0;
-            if (langid==0 && BodyIsFt) langid = 1;
-            if(window.screen.width<767 || ($('body').width() > 0 && $('body').width() < 767)){
-                location.href = "https://trial-admin.nb.tencentsite.com/exusers/u_cart.php?idweb=24447&act=show&lang="+langid+"&ismobile=1";
-            }else{
-                document.getElementById("boxName").innerHTML="";
-                if(document.getElementById("boxClose")) document.getElementById("boxClose").innerHTML="×";
-                document.getElementById("showiframe").src="https://trial-admin.nb.tencentsite.com/exusers/u_cart.php?idweb=24447&act=show&lang="+langid+"&v=9";
-                box.Show({width:'1000px', height:'600px'});
-            }
-        }
-    }
-</script>                </div>
-            </div>
-                        <div id="comm_layout_footer" class="layout " data-wow-duration="0s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
-                <div class="view_contents">
-                                    </div>
-            </div>
-            <script>
-    $(function () {
-        sendBatch(batchArr);
-    });
-</script>
-<script type="text/javascript" src="https://trial-admin.nb.tencentsite.com/webapp/UserPanel/share/js.js" charset="utf-8"></script>
-
-
-</body></html>
+<html>
+	<head>
+		<title>Myh's Blog<\title>
+	<\head>
+	<body>
+		<div data-v-5a58a989="" data-v-39573478="" class="marked" data-v-f9624136="">
+			<p>
+				<span class="katex-display">
+					<span class="katex">
+						<span class="katex-mathml">
+							<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+								<semantics>
+									<mrow>
+										<mstyle mathcolor="#0080F0">
+											<mrow>
+												<mi mathvariant="bold">M</mi>
+												<mi mathvariant="bold">y</mi>
+												<msup>
+													<mi mathvariant="bold">h</mi>
+													<mo lspace="0em" rspace="0em" mathvariant="bold">′</mo>
+												</msup>
+												<mi mathvariant="bold">s</mi>
+												<mtext>  </mtext>
+												<mi mathvariant="bold">B</mi>
+												<mi mathvariant="bold">l</mi>
+												<mi mathvariant="bold">o</mi>
+												<mi mathvariant="bold">g</mi>
+											</mrow>
+										</mstyle>
+									</mrow>
+									<annotation encoding="application/x-tex">\color{#0080F0}{\mathbf{Myh's\; Blog}}</annotation>
+								</semantics>
+							</math>
+						</span>
+						<span class="katex-html" aria-hidden="true">
+							<span class="base">
+								<span class="strut" style="height:0.996332em;vertical-align:-0.19444em;"></span>
+								<span class="mord" style="color:#0080F0;">
+									<span class="mord" style="color:#0080F0;">
+										<span class="mord mathbf" style="color:#0080F0;">M</span>
+										<span class="mord mathbf" style="margin-right:0.01597em;color:#0080F0;">y</span>
+										<span class="mord" style="color:#0080F0;">
+											<span class="mord mathbf" style="color:#0080F0;">h</span>
+											<span class="msupsub">
+												<span class="vlist-t">
+													<span class="vlist-r">
+														<span class="vlist" style="height:0.801892em;">
+															<span style="top:-3.113em;margin-right:0.05em;">
+																<span class="pstrut" style="height:2.7em;"></span>
+																<span class="sizing reset-size6 size3 mtight" style="color:#0080F0;">
+																	<span class="mord mtight" style="color:#0080F0;">
+																		<span class="mord mathbf mtight" style="color:#0080F0;">′</span>
+																	</span>
+																</span>
+															</span>
+														</span>
+													</span>
+												</span>
+											</span>
+										</span>
+										<span class="mord mathbf" style="color:#0080F0;">s</span>
+										<span class="mspace" style="color:#0080F0;margin-right:0.2777777777777778em;"></span>
+										<span class="mord mathbf" style="color:#0080F0;">B</span>
+										<span class="mord mathbf" style="color:#0080F0;">l</span>
+										<span class="mord mathbf" style="color:#0080F0;">o</span>
+										<span class="mord mathbf" style="margin-right:0.01597em;color:#0080F0;">g</span>
+									</span>
+								</span>
+							</span>
+						</span>
+					</span>
+				</span>
+			</p>
+			<hr>
+		</div>
+	<\body>
+<\html>
