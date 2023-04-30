@@ -1,6 +1,17 @@
-﻿// 每隔0.5s自动"顶一下"贺小鹏
-function dig(){
-    $.post('https://www.cqyz.cn/ajax.aspx',{cmd:'digg',aid:8013})
-    console.log("ok")
-}
-var Dig=setInterval(dig,500)
+﻿// 每隔1s"顶一下"指定老师
+(function(){
+    var type="application/x-www-form-urlencoded"
+    var loop=0,TeacherID=8013
+    function dig(){
+        fetch("https://www.cqyz.cn/ajax.aspx",{
+            method:"post",
+            body:"cmd=digg&aid="+TeacherID,
+            headers:{
+                "Content-Type": type
+            }
+        })
+        loop++
+        console.log("已顶"+loop+"次")
+    }
+    setInterval(dig,1000)
+})()
