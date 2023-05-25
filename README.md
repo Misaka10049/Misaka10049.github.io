@@ -1,2 +1,2 @@
 ## Misaka10049.github.io
-There's nothing
+Just a website
