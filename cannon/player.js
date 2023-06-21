@@ -1,4 +1,5 @@
 'use strict'
+var left,right
 window.width=window.innerWidth
 function init(){
 	var game={
@@ -6,7 +7,10 @@ function init(){
 		pxtonum(px){return Number(px.slice(0,-2))},
 		ticker:
 		{
-			gun: 0,gu_shoot: 0,going: 0,spin: 0,
+			gun: 0,
+			gu_shoot: 0,
+			going: 0,
+			spin: 0,
 			clean(){
 				clearInterval(this.gun)
 				clearInterval(this.gu_shoot)
@@ -42,14 +46,18 @@ function init(){
 				this.itself.style.left=(x-75)+"px"
 				game.progress.pro1.style.left=(x-120)+"px"
 			},
+			change_back(){
+				game.cobalt.itself.src="gu.png"
+				game.cobalt.face_changed=false
+			},
 			hurt(){
 				var now=new Date()
-				let itself=this.itself,face_changed=this.face_changed
+				let itself=this.itself
 				if(now-this.hurt_time<2000) return
 				this.hurt_time=now
 				itself.src="gu_hurt.png"
-				face_changed=true
-				setTimeout(()=>{itself.src="gu.png",face_changed=false},1000)
+				this.face_changed=true
+				setTimeout(this.change_back,1000)
 			},
 			spin(){
 				let deg=this.rotate_deg,itself=this.itself
@@ -83,7 +91,7 @@ function init(){
 			},
 			going(){
 				var x=pxtonum(game.cobalt.itself.style.left)+75-2
-				if(x<-120) x=width+120
+				if(x<left-120) x=right+120
 				game.cobalt.move(x)
 			}
 		},
@@ -93,8 +101,8 @@ function init(){
 			shoot: false,
 			move(x)
 			{
-				if(x<=54) x=54
-				if(x+54>width) x=width-54
+				if(x<=left+54) x=left+54
+				if(x+54>right) x=right-54
 				this.itself.style.left=(x-54)+"px"
 			},
 			gun(){
@@ -144,9 +152,13 @@ init()
 const resize=function()
 {
 	width=window.innerWidth
+	left=(width-window.innerHeight/16*9)/2
+	document.body.style.setProperty("--size",left+"px")
+	right=window.innerWidth-left
 	game.cobalt.move(width/2-75)
 	game.tank.move(width/2-54)
 }
+addEventListener("load",resize)
 const mousedown=function(event)
 {
 	game.tank.shoot=true

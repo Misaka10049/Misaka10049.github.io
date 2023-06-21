@@ -1,3 +1,6 @@
+- v1.1
+- 更改了cobalt的贴图
+
 - v1.0（重要更新！）
 - 将tank.js，cobalt.js，rocks.js整合到player.js中
 - 利用object和面向对象、结构化编程概念，将所有函数，变量集中到player object类中
