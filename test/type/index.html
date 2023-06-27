@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="../../image/cursor.png">
+		<title>设备类型测试</title>
+	</head>
+	<body>
+		你的设备是: <span id="name"></span>
+		<script src="../../support/UA.js"></script>
+		<script>
+			var type=isAndroid?"Android":(isLinux?"Linux":(isMac?"Mac":(isWechat?"Wechat":(isWindows?"Windows":"Unknown"))))
+			document.getElementById("name").innerHTML=type
+		</script>
+	</body>
+</html>
