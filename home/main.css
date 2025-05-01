@@ -1,5 +1,16 @@
-h4 {
-	color:rgb(0,0,0);
+#title{
+	text-align: center;
+	color: rgb(14,144,210);
+	font-family: verdana;
+	padding-top: 20px;
+}
+#icons{
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: space-evenly;
+}
+h4{
+	/*color:rgb(0,0,0);*/
 }
 a {
 	text-decoration:none;
